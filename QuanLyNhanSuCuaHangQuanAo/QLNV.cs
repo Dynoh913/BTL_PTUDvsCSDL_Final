@@ -15,7 +15,9 @@ namespace QuanLyNhanSuCuaHangQuanAo
         public QLNV()
         {
             InitializeComponent();
+
             //dgvNhanVien.DataSource = Database.Query("select * from NhanVien");
+
         }
     }
 }

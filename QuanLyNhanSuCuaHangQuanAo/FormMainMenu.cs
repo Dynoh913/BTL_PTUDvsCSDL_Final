@@ -22,6 +22,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             WindowState = FormWindowState.Maximized;
         }
 
+
         private string TaiKhoanF1;
         private string MatKhauF1;
         public FormMainMenu(string tk,string mk) : this() 
@@ -29,6 +30,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                TaiKhoanF1 = tk;
                 MatKhauF1 = mk;
         }
+
 
         private void activeBtn(object btnSender, Form f, Color color)
         {
@@ -80,8 +82,10 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private void btnDMK_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new DoiMatKhau(), Color.FromArgb(240, 255, 240));
+
             DoiMatKhau Child = new DoiMatKhau(TaiKhoanF1, MatKhauF1);
             Child.Show();
+
         }
         private void btnQLCC_Click(object sender, EventArgs e)
         {
@@ -109,6 +113,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             currentBtn = null;
             btnClose.Visible = false;
         }
-        // 11111111111111111111111
+
     }
 }

@@ -222,5 +222,6 @@
   <ItemGroup>
     <None Include="Resources\search1.png" />
   </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

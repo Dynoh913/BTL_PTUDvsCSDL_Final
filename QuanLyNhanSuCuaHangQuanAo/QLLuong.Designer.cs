@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
+
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
+
             this.SuspendLayout();
             // 
             // label4
@@ -55,6 +57,7 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Thống kê theo ngày";
             // 
+
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,6 +94,7 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 10;
             // 
+
             // label5
             // 
             this.label5.AutoSize = true;
@@ -112,6 +116,7 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Thống kê theo năm";
             // 
+
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -119,6 +124,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(229, 32);
             this.textBox3.TabIndex = 23;
+
             // 
             // label2
             // 
@@ -130,6 +136,7 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Thống kê theo tháng";
             // 
+
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,6 +161,7 @@
             this.btnTimKiem.Text = "          Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
+
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,6 +185,7 @@
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(1783, 584);
             this.dgvNhanVien.TabIndex = 10;
+
             // 
             // label1
             // 
@@ -199,7 +208,9 @@
             this.Text = "Quản lý lương";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+
             this.ResumeLayout(false);
 
         }
@@ -218,5 +229,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
+
     }
 }

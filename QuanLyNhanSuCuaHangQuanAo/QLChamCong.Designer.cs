@@ -29,6 +29,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
+
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -46,6 +47,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.tkgl = new System.Windows.Forms.CheckBox();
             this.tkten = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +61,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.label4.TabIndex = 19;
             this.label4.Text = "Tên nhân viên";
             // 
+
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,8 +86,10 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.btnTimKiem);
+
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.dgvChamCong);
+
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -93,6 +98,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.panel1.Size = new System.Drawing.Size(1812, 1050);
             this.panel1.TabIndex = 11;
             // 
+
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,6 +109,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.comboBox1.Size = new System.Drawing.Size(257, 37);
             this.comboBox1.TabIndex = 23;
             // 
+
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,6 +119,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(259, 37);
             this.dateTimePicker1.TabIndex = 22;
+
             // 
             // label5
             // 
@@ -133,6 +141,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.label3.TabIndex = 17;
             this.label3.Text = "Số giờ làm";
             // 
+
             // txtGioLam
             // 
             this.txtGioLam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,6 +179,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.btnSua.Text = "   Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+
             // 
             // btnTimKiem
             // 
@@ -206,6 +216,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // 
             // dgvChamCong
             // 
+
             this.dgvChamCong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChamCong.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvChamCong.Location = new System.Drawing.Point(0, 320);
@@ -216,6 +227,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.dgvChamCong.Size = new System.Drawing.Size(1812, 730);
             this.dgvChamCong.TabIndex = 10;
             this.dgvChamCong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChamCong_CellClick);
+
             // 
             // label1
             // 
@@ -227,7 +239,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.label1.TabIndex = 9;
             this.label1.Text = "Thông tin chấm công";
             // 
-            // tknl
+
             // 
             this.tknl.AutoSize = true;
             this.tknl.Location = new System.Drawing.Point(757, 251);
@@ -257,6 +269,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.tkten.Text = "Tìm kiếm theo tên";
             this.tkten.UseVisualStyleBackColor = true;
             // 
+
             // QLChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -270,7 +283,9 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.Load += new System.EventHandler(this.QLChamCong_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).EndInit();
+
             this.ResumeLayout(false);
 
         }
@@ -278,6 +293,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         #endregion
 
         private System.Windows.Forms.Label label4;
+
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -294,5 +310,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private System.Windows.Forms.CheckBox tknl;
         private System.Windows.Forms.CheckBox tkgl;
         private System.Windows.Forms.CheckBox tkten;
+
     }
 }

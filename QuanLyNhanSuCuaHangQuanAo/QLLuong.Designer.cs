@@ -199,7 +199,9 @@
             this.Text = "Quản lý lương";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+
             this.ResumeLayout(false);
 
         }
@@ -218,5 +220,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
+
     }
 }

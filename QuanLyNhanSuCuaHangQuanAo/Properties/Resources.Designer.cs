@@ -294,6 +294,7 @@ namespace QuanLyNhanSuCuaHangQuanAo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap reset_password {
             get {
                 object obj = ResourceManager.GetObject("reset-password", resourceCulture);
@@ -304,6 +305,7 @@ namespace QuanLyNhanSuCuaHangQuanAo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap salary {
             get {
                 object obj = ResourceManager.GetObject("salary", resourceCulture);
@@ -344,6 +346,7 @@ namespace QuanLyNhanSuCuaHangQuanAo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap tool {
             get {
                 object obj = ResourceManager.GetObject("tool", resourceCulture);

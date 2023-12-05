@@ -2,34 +2,32 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-
 
 namespace QuanLyNhanSuCuaHangQuanAo
 {
-    public partial class DoiMatKhau : Form
+    public partial class fDoiMatKhau : UserControl
     {
-
-        public DoiMatKhau()
+        public fDoiMatKhau()
         {
             InitializeComponent();
         }
 
         private string tkc;
         private string mkc;
-        public DoiMatKhau(string tk,string mk) : this()
+        public fDoiMatKhau(string tk, string mk) : this()
         {
             tkc = tk;
             mkc = mk;
             txtUsername2.Text = tkc;
 
         }
-       
+
 
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
@@ -58,7 +56,11 @@ namespace QuanLyNhanSuCuaHangQuanAo
                             cmd.Parameters.AddWithValue("@NewMK", txtNewPass1.Text);
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo");
-                            this.Close();
+                            txtOldPass.Clear();
+                            txtNewPass1.Clear();
+                            txtNewPass2.Clear();
+                            txtOldPass.Focus();
+
                         }
                     }
                 }
@@ -81,7 +83,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
 
         }
 
-      
-
+       
     }
 }

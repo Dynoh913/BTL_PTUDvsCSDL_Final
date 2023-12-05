@@ -61,6 +61,7 @@
             // 
             // panel1
             // 
+
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.tkdc);
             this.panel1.Controls.Add(this.tksdt);
@@ -89,6 +90,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1370, 749);
@@ -346,6 +348,7 @@
             this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.search;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnTimKiem.Location = new System.Drawing.Point(1204, 252);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";

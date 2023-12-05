@@ -95,14 +95,9 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private void btnXoa_Click(object sender, EventArgs e)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
-            var maNVTable = Database.Query("SELECT MaNV FROM NhanVien WHERE TenNV = @TenNV", parameters);
-            if (maNVTable.Rows.Count > 0)
-            {
-                string maNV = maNVTable.Rows[0]["MaNV"].ToString();
-                parameters.Add("@MaNV", maNV);
-                parameters.Add("@NgayDiLam", dateTimePicker1.Value);
-                Database.Execute("DELETE FROM ChamCong WHERE MaNV = @MaNV AND NgayDiLam = @NgayDiLam", parameters);
-            }
+            parameters.Add("@NgayDiLam", dateTimePicker1.Value);
+            Database.Execute("DELETE FROM ChamCong WHERE NgayDiLam = @NgayDiLam", parameters);
+            RefreshDataGridView();
         }
 
 

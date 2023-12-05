@@ -15,11 +15,9 @@ namespace QuanLyNhanSuCuaHangQuanAo
     public partial class DoiMatKhau : Form
     {
 
-        private Database db;
         public DoiMatKhau()
         {
             InitializeComponent();
-            db = new Database();
         }
         private string tkc;
         private string mkc;
@@ -50,7 +48,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
 
                 if (txtNewPass1.Text == txtNewPass2.Text)
                 {
-                    using (SqlConnection Conn = db.getConn())
+                    using (SqlConnection Conn = new SqlConnection(Database.getConn()))
                     {
                         Conn.Open();
                         string query = "UPDATE TaiKhoan SET MatKhau = @NewMK Where TenDangNhap = '" + tkc + "' AND MatKhau = '" + mkc + "' ";

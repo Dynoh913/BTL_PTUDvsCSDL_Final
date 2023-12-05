@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace QuanLyNhanSuCuaHangQuanAo
 {
     public partial class DoiMatKhau : Form
     {
+
         private Database db;
         public DoiMatKhau()
         {
@@ -81,5 +83,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
         }
 
       
+
     }
 }

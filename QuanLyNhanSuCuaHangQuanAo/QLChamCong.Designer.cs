@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
+
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -44,6 +45,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
+
             this.SuspendLayout();
             // 
             // label4
@@ -56,6 +58,7 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Tên nhân viên";
             // 
+
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,6 +81,7 @@
             this.panel1.Controls.Add(this.btnTimKiem);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.dgvNhanVien);
+
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -85,6 +89,7 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 11;
             // 
+
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,6 +98,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(231, 32);
             this.dateTimePicker1.TabIndex = 22;
+
             // 
             // label5
             // 
@@ -114,6 +120,7 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Số giờ làm";
             // 
+
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -147,6 +154,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "   Sửa";
             this.button2.UseVisualStyleBackColor = true;
+
             // 
             // btnTimKiem
             // 
@@ -164,6 +172,7 @@
             this.btnTimKiem.Text = "          Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
+
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -187,6 +196,7 @@
             this.dgvNhanVien.RowTemplate.Height = 24;
             this.dgvNhanVien.Size = new System.Drawing.Size(1783, 584);
             this.dgvNhanVien.TabIndex = 10;
+
             // 
             // label1
             // 
@@ -198,6 +208,7 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Thông tin chấm công";
             // 
+
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -207,6 +218,7 @@
             this.comboBox1.Size = new System.Drawing.Size(229, 32);
             this.comboBox1.TabIndex = 23;
             // 
+
             // QLChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -218,7 +230,9 @@
             this.Text = "Quản lý chấm công";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+
             this.ResumeLayout(false);
 
         }
@@ -226,6 +240,7 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
+
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -239,5 +254,6 @@
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
+
     }
 }

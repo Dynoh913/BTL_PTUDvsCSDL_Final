@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+
             this.txtNewPass2 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtNewPass1 = new System.Windows.Forms.TextBox();
@@ -57,6 +59,7 @@
             // 
             // panel1
             // 
+
             this.panel1.Controls.Add(this.btnDoiMatKhau);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label9);
@@ -95,6 +98,7 @@
             this.btnDoiMatKhau.Text = "Đổi mật khẩu";
             this.btnDoiMatKhau.UseVisualStyleBackColor = false;
             this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
+
             // 
             // pictureBox4
             // 
@@ -150,6 +154,7 @@
             this.txtNewPass2.Size = new System.Drawing.Size(298, 25);
             this.txtNewPass2.TabIndex = 26;
             this.txtNewPass2.UseSystemPasswordChar = true;
+
             // 
             // pictureBox3
             // 
@@ -162,6 +167,7 @@
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
             // 
+
             // txtNewPass1
             // 
             this.txtNewPass1.BackColor = System.Drawing.SystemColors.Window;
@@ -172,6 +178,7 @@
             this.txtNewPass1.Size = new System.Drawing.Size(298, 25);
             this.txtNewPass1.TabIndex = 25;
             this.txtNewPass1.UseSystemPasswordChar = true;
+
             // 
             // label5
             // 
@@ -212,6 +219,7 @@
             this.txtOldPass.Size = new System.Drawing.Size(298, 25);
             this.txtOldPass.TabIndex = 24;
             this.txtOldPass.UseSystemPasswordChar = true;
+
             // 
             // label6
             // 
@@ -244,6 +252,7 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Tên tài khoản";
             // 
+
             // txtUsername2
             // 
             this.txtUsername2.BackColor = System.Drawing.SystemColors.Window;
@@ -254,6 +263,7 @@
             this.txtUsername2.Name = "txtUsername2";
             this.txtUsername2.Size = new System.Drawing.Size(298, 25);
             this.txtUsername2.TabIndex = 23;
+
             // 
             // label8
             // 
@@ -297,11 +307,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+
         private System.Windows.Forms.TextBox txtUsername2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtOldPass;
+
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
@@ -309,10 +321,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+
         private System.Windows.Forms.TextBox txtNewPass2;
         private System.Windows.Forms.TextBox txtNewPass1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDoiMatKhau;
+
     }
 }

@@ -15,6 +15,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         public QLNguoiThan()
         {
             InitializeComponent();
+
         }
     }
 }

@@ -46,6 +46,7 @@
             this.panelTitle.SuspendLayout();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+
             this.SuspendLayout();
             // 
             // panelMenu
@@ -61,9 +62,11 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
+
             this.panelMenu.Size = new System.Drawing.Size(274, 756);
             this.panelMenu.TabIndex = 0;
             // 
+
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
@@ -146,6 +149,7 @@
             this.btnQLL.UseVisualStyleBackColor = false;
             this.btnQLL.Click += new System.EventHandler(this.btnQLL_Click);
             // 
+
             // btnQLNT
             // 
             this.btnQLNT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(194)))), ((int)(((byte)(247)))));
@@ -167,6 +171,7 @@
             this.btnQLNT.UseVisualStyleBackColor = false;
             this.btnQLNT.Click += new System.EventHandler(this.btnQLNT_Click);
             // 
+
             // btnQLNV
             // 
             this.btnQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(194)))), ((int)(((byte)(247)))));
@@ -200,6 +205,7 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(164)))), ((int)(((byte)(242)))));
@@ -257,11 +263,14 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(1382, 756);
+
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
@@ -269,11 +278,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
             this.panelMenu.ResumeLayout(false);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+
+
             this.ResumeLayout(false);
 
         }

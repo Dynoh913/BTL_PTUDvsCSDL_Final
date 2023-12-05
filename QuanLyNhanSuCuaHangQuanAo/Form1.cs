@@ -10,10 +10,12 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 
+
 namespace QuanLyNhanSuCuaHangQuanAo
 {
     public partial class LoginForm : Form
     {
+
         private Database db;
         public LoginForm()
         {
@@ -66,6 +68,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             txtUsername.Focus();
+
         }
     }
 }

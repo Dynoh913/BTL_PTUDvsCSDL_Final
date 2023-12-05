@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
+
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,6 +60,7 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Tên nhân viên";
             // 
+
             // dgvNhanVien
             // 
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -80,6 +82,7 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Thông tin người thân";
             // 
+
             // panel1
             // 
             this.panel1.Controls.Add(this.comboBox1);
@@ -113,6 +116,7 @@
             this.label5.TabIndex = 48;
             this.label5.Text = "Tên người thân";
             // 
+
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,6 +124,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(229, 32);
             this.textBox5.TabIndex = 47;
+
             // 
             // label2
             // 
@@ -131,6 +136,7 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Mã người thân";
             // 
+
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,6 +144,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(229, 32);
             this.textBox2.TabIndex = 44;
+
             // 
             // label6
             // 
@@ -149,6 +156,7 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "Nghề nghiệp";
             // 
+
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,6 +184,7 @@
             this.label8.TabIndex = 35;
             this.label8.Text = "Ngày sinh";
             // 
+
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,6 +245,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(229, 32);
             this.comboBox1.TabIndex = 49;
+
             // 
             // QLNguoiThan
             // 
@@ -243,6 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1783, 953);
+
             this.Controls.Add(this.panel1);
             this.Name = "QLNguoiThan";
             this.Text = "Quản lý người thân";
@@ -272,5 +283,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+
     }
 }

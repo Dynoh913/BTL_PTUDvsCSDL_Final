@@ -30,16 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
 
             this.button1 = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+
 
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -57,6 +60,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 281);
             this.panel1.TabIndex = 0;
+
 
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 
@@ -87,7 +91,6 @@
             this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-
             // 
             // txtUsername
             // 
@@ -114,6 +117,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
 
+
             this.label2.Location = new System.Drawing.Point(97, 330);
 
             this.label2.Name = "label2";
@@ -121,10 +125,12 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Tên tài khoản";
             // 
+
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+
 
             this.pictureBox2.Location = new System.Drawing.Point(48, 321);
             this.pictureBox2.Name = "pictureBox2";
@@ -139,6 +145,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
 
+
             this.pictureBox3.Location = new System.Drawing.Point(48, 415);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 38);
@@ -152,6 +159,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+
 
             this.label3.Location = new System.Drawing.Point(97, 415);
             this.label3.Name = "label3";
@@ -190,7 +198,9 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
 
+
             this.Controls.Add(this.txtPassword);
+
 
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
@@ -218,6 +228,7 @@
 
         private System.Windows.Forms.Panel panel1;
 
+
         private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.TextBox txtUsername;
@@ -227,7 +238,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
-
         private System.Windows.Forms.TextBox txtPassword;
 
         private System.Windows.Forms.Label label4;

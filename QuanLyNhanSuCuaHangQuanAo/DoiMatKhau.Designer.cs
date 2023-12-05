@@ -31,10 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDoiMatKhau = new System.Windows.Forms.Button();
+
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+
             this.txtNewPass2 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtNewPass1 = new System.Windows.Forms.TextBox();
@@ -57,6 +59,7 @@
             // 
             // panel1
             // 
+
             this.panel1.Controls.Add(this.btnDoiMatKhau);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label9);
@@ -73,6 +76,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtUsername2);
+
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -311,6 +315,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+
 
         private System.Windows.Forms.TextBox txtNewPass2;
         private System.Windows.Forms.TextBox txtNewPass1;

@@ -87,6 +87,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             activeBtn(sender, new QLLuong(), Color.FromArgb(244, 164, 96));
         }
 
+
         private void btnDMK_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new DoiMatKhau(), Color.FromArgb(240, 255, 240));

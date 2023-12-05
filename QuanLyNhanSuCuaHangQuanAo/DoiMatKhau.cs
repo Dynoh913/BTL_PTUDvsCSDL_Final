@@ -19,6 +19,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             InitializeComponent();
         }
+
         private string tkc;
         private string mkc;
         public DoiMatKhau(string tk,string mk) : this()

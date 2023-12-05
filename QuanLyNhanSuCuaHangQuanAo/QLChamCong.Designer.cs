@@ -53,6 +53,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label4.Location = new System.Drawing.Point(14, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 29);
@@ -66,13 +67,16 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(275, 37);
+
             this.textBox1.TabIndex = 13;
             // 
             // panel1
             // 
+
             this.panel1.Controls.Add(this.tknl);
             this.panel1.Controls.Add(this.tkgl);
             this.panel1.Controls.Add(this.tkten);
+
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label5);
@@ -150,6 +154,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.label5.Location = new System.Drawing.Point(610, 200);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 29);
+
             this.label5.TabIndex = 21;
             this.label5.Text = "Ngày đi làm";
             // 
@@ -297,3 +302,4 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private System.Windows.Forms.CheckBox tkten;
     }
 }
+

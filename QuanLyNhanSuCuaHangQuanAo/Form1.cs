@@ -11,23 +11,22 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 
 
+
 namespace QuanLyNhanSuCuaHangQuanAo
 {
     public partial class LoginForm : Form
     {
 
-        private Database db;
         public LoginForm()
         {
             InitializeComponent();
-            db = new Database();
         }
         public string Username;
         public string Password;
         private void button1_Click(object sender, EventArgs e)
         {
             
-            using (SqlConnection Conn = db.getConn())
+            using (SqlConnection Conn = new SqlConnection(Database.getConn()))
             {
                 Conn.Open();
                 Username = txtUsername.Text;
@@ -56,7 +55,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
                         }
                     }
                 }
-
             }
 
 

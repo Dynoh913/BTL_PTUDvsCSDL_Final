@@ -60,6 +60,13 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 labelTitle.Text = f.Text.ToUpper();
             }
         }
+
+        private void showControl(Control ctrl)
+        {
+            panelMain.Controls.Clear();
+            ctrl.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(ctrl);
+        }
         private void disableBtn()
         {
             foreach (Control btn in panelMenu.Controls)
@@ -79,14 +86,18 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             activeBtn(sender, new QLLuong(), Color.FromArgb(244, 164, 96));
         }
+
+
         private void btnDMK_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new DoiMatKhau(), Color.FromArgb(240, 255, 240));
 
-            DoiMatKhau Child = new DoiMatKhau(TaiKhoanF1, MatKhauF1);
-            Child.Show();
+            fDoiMatKhau Child = new fDoiMatKhau(TaiKhoanF1, MatKhauF1);
+            showControl(Child);
+   
 
         }
+
         private void btnQLCC_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new QLChamCong(), Color.FromArgb(238, 232, 170));

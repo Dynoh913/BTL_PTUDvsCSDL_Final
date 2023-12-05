@@ -28,212 +28,202 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.panelQLNV = new System.Windows.Forms.Panel();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.chbDiaChi = new System.Windows.Forms.CheckBox();
-            this.chbSdt = new System.Windows.Forms.CheckBox();
-            this.chbCv = new System.Windows.Forms.CheckBox();
-            this.chbTenNv = new System.Windows.Forms.CheckBox();
-            this.chbNs = new System.Windows.Forms.CheckBox();
-            this.chbMaNv = new System.Windows.Forms.CheckBox();
+
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.cbCv = new System.Windows.Forms.ComboBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dtpNs = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtTenNv = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtSdt = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMaNv = new System.Windows.Forms.TextBox();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.erpBaoLoi = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panelQLNV.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelQLNV
+            // panel1
             // 
-            this.panelQLNV.Controls.Add(this.btnReset);
-            this.panelQLNV.Controls.Add(this.chbDiaChi);
-            this.panelQLNV.Controls.Add(this.chbSdt);
-            this.panelQLNV.Controls.Add(this.chbCv);
-            this.panelQLNV.Controls.Add(this.chbTenNv);
-            this.panelQLNV.Controls.Add(this.chbNs);
-            this.panelQLNV.Controls.Add(this.chbMaNv);
-            this.panelQLNV.Controls.Add(this.label7);
-            this.panelQLNV.Controls.Add(this.txtDiaChi);
-            this.panelQLNV.Controls.Add(this.cbCv);
-            this.panelQLNV.Controls.Add(this.label6);
-            this.panelQLNV.Controls.Add(this.dtpNs);
-            this.panelQLNV.Controls.Add(this.label5);
-            this.panelQLNV.Controls.Add(this.label4);
-            this.panelQLNV.Controls.Add(this.txtTenNv);
-            this.panelQLNV.Controls.Add(this.label3);
-            this.panelQLNV.Controls.Add(this.txtSdt);
-            this.panelQLNV.Controls.Add(this.label2);
-            this.panelQLNV.Controls.Add(this.txtMaNv);
-            this.panelQLNV.Controls.Add(this.btnXoa);
-            this.panelQLNV.Controls.Add(this.btnSua);
-            this.panelQLNV.Controls.Add(this.btnTimKiem);
-            this.panelQLNV.Controls.Add(this.btnThem);
-            this.panelQLNV.Controls.Add(this.dgvNhanVien);
-            this.panelQLNV.Controls.Add(this.label1);
-            this.panelQLNV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelQLNV.Location = new System.Drawing.Point(0, 0);
-            this.panelQLNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelQLNV.Name = "panelQLNV";
-            this.panelQLNV.Size = new System.Drawing.Size(1827, 922);
-            this.panelQLNV.TabIndex = 9;
+            this.panel1.Controls.Add(this.checkBox6);
+            this.panel1.Controls.Add(this.checkBox5);
+            this.panel1.Controls.Add(this.checkBox4);
+            this.panel1.Controls.Add(this.checkBox3);
+            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.btnTimKiem);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.dgvNhanVien);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1370, 749);
+            this.panel1.TabIndex = 9;
             // 
-            // btnReset
+            // checkBox6
             // 
-            this.btnReset.BackColor = System.Drawing.SystemColors.Window;
-            this.btnReset.FlatAppearance.BorderSize = 0;
-            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.reset11;
-            this.btnReset.Location = new System.Drawing.Point(271, 9);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(47, 43);
-            this.btnReset.TabIndex = 34;
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(1075, 142);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(127, 17);
+            this.checkBox6.TabIndex = 33;
+            this.checkBox6.Text = "Tìm kiếm theo địa chỉ";
+            this.checkBox6.UseVisualStyleBackColor = true;
             // 
-            // chbDiaChi
+            // checkBox5
             // 
-            this.chbDiaChi.AutoSize = true;
-            this.chbDiaChi.Location = new System.Drawing.Point(1433, 175);
-            this.chbDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbDiaChi.Name = "chbDiaChi";
-            this.chbDiaChi.Size = new System.Drawing.Size(155, 20);
-            this.chbDiaChi.TabIndex = 33;
-            this.chbDiaChi.Text = "Tìm kiếm theo địa chỉ";
-            this.chbDiaChi.UseVisualStyleBackColor = true;
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(1075, 80);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(156, 17);
+            this.checkBox5.TabIndex = 32;
+            this.checkBox5.Text = "Tìm kiếm theo số điện thoại";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // chbSdt
+            // checkBox4
             // 
-            this.chbSdt.AutoSize = true;
-            this.chbSdt.Location = new System.Drawing.Point(1433, 98);
-            this.chbSdt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbSdt.Name = "chbSdt";
-            this.chbSdt.Size = new System.Drawing.Size(192, 20);
-            this.chbSdt.TabIndex = 32;
-            this.chbSdt.Text = "Tìm kiếm theo số điện thoại";
-            this.chbSdt.UseVisualStyleBackColor = true;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(640, 142);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(134, 17);
+            this.checkBox4.TabIndex = 31;
+            this.checkBox4.Text = "Tìm kiếm theo chức vụ";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // chbCv
+            // checkBox3
             // 
-            this.chbCv.AutoSize = true;
-            this.chbCv.Location = new System.Drawing.Point(853, 175);
-            this.chbCv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbCv.Name = "chbCv";
-            this.chbCv.Size = new System.Drawing.Size(161, 20);
-            this.chbCv.TabIndex = 31;
-            this.chbCv.Text = "Tìm kiếm theo chức vụ";
-            this.chbCv.UseVisualStyleBackColor = true;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(640, 80);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(110, 17);
+            this.checkBox3.TabIndex = 30;
+            this.checkBox3.Text = "Tìm kiếm theo tên";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // chbTenNv
+            // checkBox2
             // 
-            this.chbTenNv.AutoSize = true;
-            this.chbTenNv.Location = new System.Drawing.Point(853, 98);
-            this.chbTenNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbTenNv.Name = "chbTenNv";
-            this.chbTenNv.Size = new System.Drawing.Size(134, 20);
-            this.chbTenNv.TabIndex = 30;
-            this.chbTenNv.Text = "Tìm kiếm theo tên";
-            this.chbTenNv.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(109, 142);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(140, 17);
+            this.checkBox2.TabIndex = 29;
+            this.checkBox2.Text = "Tìm kiếm theo ngày sinh";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // chbNs
+            // checkBox1
             // 
-            this.chbNs.AutoSize = true;
-            this.chbNs.Location = new System.Drawing.Point(145, 175);
-            this.chbNs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbNs.Name = "chbNs";
-            this.chbNs.Size = new System.Drawing.Size(173, 20);
-            this.chbNs.TabIndex = 29;
-            this.chbNs.Text = "Tìm kiếm theo ngày sinh";
-            this.chbNs.UseVisualStyleBackColor = true;
-            // 
-            // chbMaNv
-            // 
-            this.chbMaNv.AutoSize = true;
-            this.chbMaNv.Location = new System.Drawing.Point(145, 98);
-            this.chbMaNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbMaNv.Name = "chbMaNv";
-            this.chbMaNv.Size = new System.Drawing.Size(135, 20);
-            this.chbMaNv.TabIndex = 28;
-            this.chbMaNv.Text = "Tìm kiếm theo mã";
-            this.chbMaNv.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(109, 80);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(109, 17);
+            this.checkBox1.TabIndex = 28;
+            this.checkBox1.Text = "Tìm kiếm theo mã";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1300, 204);
+
+            this.label7.Location = new System.Drawing.Point(975, 166);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 24);
+            this.label7.Size = new System.Drawing.Size(54, 19);
             this.label7.TabIndex = 27;
             this.label7.Text = "Địa chỉ";
             // 
-            // txtDiaChi
+            // textBox5
             // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(1433, 201);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDiaChi.Multiline = true;
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(229, 90);
-            this.txtDiaChi.TabIndex = 26;
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(1075, 163);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(246, 27);
+            this.textBox5.TabIndex = 26;
             // 
-            // cbCv
+            // comboBox1
             // 
-            this.cbCv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCv.FormattingEnabled = true;
-            this.cbCv.Items.AddRange(new object[] {
-            "Nhân viên",
-            "Quản lý"});
-            this.cbCv.Location = new System.Drawing.Point(853, 201);
-            this.cbCv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbCv.Name = "cbCv";
-            this.cbCv.Size = new System.Drawing.Size(163, 32);
-            this.cbCv.TabIndex = 25;
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(640, 163);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(123, 27);
+            this.comboBox1.TabIndex = 25;
+
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(723, 204);
+
+            this.label6.Location = new System.Drawing.Point(542, 166);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 24);
+            this.label6.Size = new System.Drawing.Size(62, 19);
             this.label6.TabIndex = 24;
             this.label6.Text = "Chức vụ";
             // 
-            // dtpNs
+            // dateTimePicker1
             // 
-            this.dtpNs.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNs.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNs.Location = new System.Drawing.Point(145, 201);
-            this.dtpNs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtpNs.Name = "dtpNs";
-            this.dtpNs.Size = new System.Drawing.Size(199, 32);
-            this.dtpNs.TabIndex = 22;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(109, 163);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(150, 27);
+            this.dateTimePicker1.TabIndex = 22;
+
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 207);
+
+            this.label5.Location = new System.Drawing.Point(10, 168);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 24);
+            this.label5.Size = new System.Drawing.Size(73, 19);
+
             this.label5.TabIndex = 21;
             this.label5.Text = "Ngày sinh";
             // 
@@ -241,196 +231,208 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(721, 127);
+
+            this.label4.Location = new System.Drawing.Point(541, 103);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 24);
+            this.label4.Size = new System.Drawing.Size(99, 19);
             this.label4.TabIndex = 19;
             this.label4.Text = "Tên nhân viên";
             // 
-            // txtTenNv
+            // textBox4
             // 
-            this.txtTenNv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNv.Location = new System.Drawing.Point(853, 124);
-            this.txtTenNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenNv.Name = "txtTenNv";
-            this.txtTenNv.Size = new System.Drawing.Size(229, 32);
-            this.txtTenNv.TabIndex = 18;
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(640, 101);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(173, 27);
+            this.textBox4.TabIndex = 18;
+
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1300, 127);
+
+            this.label3.Location = new System.Drawing.Point(975, 103);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 24);
+            this.label3.Size = new System.Drawing.Size(94, 19);
             this.label3.TabIndex = 17;
             this.label3.Text = "Số điện thoại";
             // 
-            // txtSdt
+            // textBox3
             // 
-            this.txtSdt.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSdt.Location = new System.Drawing.Point(1433, 124);
-            this.txtSdt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSdt.Name = "txtSdt";
-            this.txtSdt.Size = new System.Drawing.Size(229, 32);
-            this.txtSdt.TabIndex = 16;
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(1075, 101);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(173, 27);
+            this.textBox3.TabIndex = 16;
+
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 127);
+
+            this.label2.Location = new System.Drawing.Point(10, 103);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 24);
+            this.label2.Size = new System.Drawing.Size(97, 19);
             this.label2.TabIndex = 17;
             this.label2.Text = "Mã nhân viên";
             // 
-            // txtMaNv
+            // textBox2
             // 
-            this.txtMaNv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNv.Location = new System.Drawing.Point(145, 124);
-            this.txtMaNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaNv.Name = "txtMaNv";
-            this.txtMaNv.Size = new System.Drawing.Size(199, 32);
-            this.txtMaNv.TabIndex = 16;
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(109, 101);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(150, 27);
+            this.textBox2.TabIndex = 16;
             // 
-            // btnXoa
+            // button3
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.bin1;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(304, 309);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(140, 54);
-            this.btnXoa.TabIndex = 15;
-            this.btnXoa.Text = "   Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.button3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.bin1;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(228, 251);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(105, 44);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "   Xóa";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // button2
             // 
-            this.btnSua.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.tool;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(157, 308);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnSua.Size = new System.Drawing.Size(140, 54);
-            this.btnSua.TabIndex = 14;
-            this.btnSua.Text = "   Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.button2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.tool;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(118, 250);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(105, 44);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "   Sửa";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1007, 261);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(185, 27);
+            this.textBox1.TabIndex = 13;
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnTimKiem.BackColor = System.Drawing.SystemColors.Window;
+
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.search;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(1605, 310);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
+            this.btnTimKiem.Location = new System.Drawing.Point(1204, 252);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnTimKiem.Size = new System.Drawing.Size(149, 54);
+            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnTimKiem.Size = new System.Drawing.Size(112, 44);
             this.btnTimKiem.TabIndex = 12;
             this.btnTimKiem.Text = "          Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // btnThem
+            // button1
             // 
-            this.btnThem.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.plus;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(12, 309);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnThem.Size = new System.Drawing.Size(140, 54);
-            this.btnThem.TabIndex = 11;
-            this.btnThem.Text = "   Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.button1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.plus;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(9, 251);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(105, 44);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "   Thêm";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dgvNhanVien
             // 
-            this.dgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvNhanVien.Location = new System.Drawing.Point(0, 339);
-            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 275);
+            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.RowHeadersWidth = 51;
             this.dgvNhanVien.RowTemplate.Height = 24;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1827, 583);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1370, 474);
             this.dgvNhanVien.TabIndex = 10;
-            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
+
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 35);
+            this.label1.Size = new System.Drawing.Size(193, 27);
             this.label1.TabIndex = 9;
             this.label1.Text = "Thông tin nhân viên";
             // 
-            // erpBaoLoi
-            // 
-            this.erpBaoLoi.ContainerControl = this;
-            // 
             // QLNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1827, 922);
-            this.Controls.Add(this.panelQLNV);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "QLNV";
             this.Text = "Quản lý nhân viên";
-            this.panelQLNV.ResumeLayout(false);
-            this.panelQLNV.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).EndInit();
+
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelQLNV;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox chbDiaChi;
-        private System.Windows.Forms.CheckBox chbSdt;
-        private System.Windows.Forms.CheckBox chbCv;
-        private System.Windows.Forms.CheckBox chbTenNv;
-        private System.Windows.Forms.CheckBox chbNs;
-        private System.Windows.Forms.CheckBox chbMaNv;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.ComboBox cbCv;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dtpNs;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtTenNv;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSdt;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMaNv;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.ErrorProvider erpBaoLoi;
+        private System.Windows.Forms.TextBox textBox2;
+
     }
 }

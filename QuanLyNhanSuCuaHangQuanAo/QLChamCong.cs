@@ -107,6 +107,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 dtpNgayLam.Text = dgvChamCong.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txtSogiolam.Text = dgvChamCong.Rows[e.RowIndex].Cells[3].Value.ToString();
             }
+
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {

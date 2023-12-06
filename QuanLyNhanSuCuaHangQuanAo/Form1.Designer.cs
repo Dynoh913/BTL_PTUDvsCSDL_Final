@@ -30,15 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnDangnhap = new System.Windows.Forms.Button();
+
+            this.button1 = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+
+
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +60,10 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 281);
             this.panel1.TabIndex = 0;
+
+
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // pictureBox1
             // 
@@ -67,20 +76,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnDangnhap
+
+            // button1
             // 
-            this.btnDangnhap.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnDangnhap.FlatAppearance.BorderSize = 0;
-            this.btnDangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangnhap.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangnhap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDangnhap.Location = new System.Drawing.Point(155, 520);
-            this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.Size = new System.Drawing.Size(140, 54);
-            this.btnDangnhap.TabIndex = 2;
-            this.btnDangnhap.Text = "Đăng nhập";
-            this.btnDangnhap.UseVisualStyleBackColor = false;
-            this.btnDangnhap.Click += new System.EventHandler(this.button1_Click);
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(155, 520);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 54);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Đăng nhập";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtUsername
             // 
@@ -106,19 +116,26 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(97, 327);
+
+
+            this.label2.Location = new System.Drawing.Point(97, 330);
+
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 22);
             this.label2.TabIndex = 5;
             this.label2.Text = "Tên tài khoản";
             // 
+
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(57, 320);
+
+
+            this.pictureBox2.Location = new System.Drawing.Point(48, 321);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(43, 38);
+
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -127,9 +144,12 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(57, 415);
+
+
+            this.pictureBox3.Location = new System.Drawing.Point(48, 415);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(43, 38);
+
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
@@ -139,12 +159,15 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(97, 421);
+
+
+            this.label3.Location = new System.Drawing.Point(97, 415);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 22);
             this.label3.TabIndex = 9;
             this.label3.Text = "Mật khẩu";
             // 
+
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
@@ -155,6 +178,7 @@
             this.txtPassword.Size = new System.Drawing.Size(298, 25);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.UseSystemPasswordChar = true;
+
             // 
             // label4
             // 
@@ -173,13 +197,19 @@
             this.ClientSize = new System.Drawing.Size(450, 600);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
+
+
             this.Controls.Add(this.txtPassword);
+
+
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnDangnhap);
+
+            this.Controls.Add(this.button1);
+
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
@@ -197,7 +227,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDangnhap;
+
+
+        private System.Windows.Forms.Button button1;
+
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -206,6 +239,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPassword;
+
         private System.Windows.Forms.Label label4;
     }
 }

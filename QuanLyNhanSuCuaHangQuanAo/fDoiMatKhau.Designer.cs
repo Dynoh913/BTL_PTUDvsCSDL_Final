@@ -271,8 +271,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1369, 802);
-            this.panel1.TabIndex = 14;
+            this.panel1.Size = new System.Drawing.Size(1395, 867);
+            this.panel1.TabIndex = 13;
             // 
             // fDoiMatKhau
             // 
@@ -280,7 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "fDoiMatKhau";
-            this.Size = new System.Drawing.Size(1369, 802);
+            this.Size = new System.Drawing.Size(1395, 867);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

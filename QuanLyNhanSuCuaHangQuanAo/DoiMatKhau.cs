@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace QuanLyNhanSuCuaHangQuanAo
 {
     public partial class DoiMatKhau : Form
     {
+
         public DoiMatKhau()
         {
             InitializeComponent();
@@ -20,14 +22,16 @@ namespace QuanLyNhanSuCuaHangQuanAo
 
         private string tkc;
         private string mkc;
-        public DoiMatKhau(string tk, string mk) : this()
+        public DoiMatKhau(string tk,string mk) : this()
         {
             tkc = tk;
             mkc = mk;
             txtUsername2.Text = tkc;
 
         }
-        private void btnDoimk_Click(object sender, EventArgs e)
+       
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
             if (txtOldPass.Text == mkc)
             {
@@ -74,6 +78,10 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 txtNewPass2.Clear();
                 txtOldPass.Focus();
             }
+
         }
+
+      
+
     }
 }

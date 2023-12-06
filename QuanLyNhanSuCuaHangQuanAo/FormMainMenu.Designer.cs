@@ -60,7 +60,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(274, 756);
+            this.panelMenu.Size = new System.Drawing.Size(274, 653);
             this.panelMenu.TabIndex = 0;
             // 
             // btnLogout
@@ -229,16 +229,16 @@
             this.panelMain.Location = new System.Drawing.Point(274, 100);
             this.panelMain.MinimumSize = new System.Drawing.Size(950, 500);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1108, 656);
+            this.panelMain.Size = new System.Drawing.Size(1108, 553);
             this.panelMain.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.clothing_store_logo_design_inspiration_cloth_shop_logo_clothes_logo_illustration_vector;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(327, 100);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1108, 656);
+            this.pictureBox2.Size = new System.Drawing.Size(485, 361);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -247,7 +247,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 756);
+            this.ClientSize = new System.Drawing.Size(1382, 653);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);

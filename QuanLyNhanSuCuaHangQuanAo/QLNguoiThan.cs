@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,7 +27,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             txtMaNT.Text = "";
             txtTenNT.Text = "";
             txtNgheNghiep.Text = "";
-
         }
         private bool checkForm()
         {
@@ -63,7 +61,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
         }
         private void cbTenNv_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             try
             {
                 string query = "select MaNT,TenNT,TenNV,NgheNghiep,NguoiThan.NgaySinh from NguoiThan inner join NhanVien on NguoiThan.MaNV = NhanVien.MaNV where NguoiThan.MaNV=@MaNV";
@@ -141,7 +138,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             }
         }
 
-
         private void dgvNguoiThan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1 && e.ColumnIndex > -1)
@@ -152,22 +148,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 txtNgheNghiep.Text = dgvNguoiThan.Rows[e.RowIndex].Cells[3].Value.ToString();
                 dtpNs.Text = dgvNguoiThan.Rows[e.RowIndex].Cells[4].Value.ToString();
             }
-
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            txtMaNT.ReadOnly = false;
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            txtMaNT.Clear();
-            txtTenNT.Clear();
-            dtpNs.Value = Convert.ToDateTime("01/01/2000");
-            txtNgheNghiep.Clear();
-            cbTenNv.SelectedIndex = -1;
-            cbTenNv.Enabled = true;
-        }
-
-
     }
 }

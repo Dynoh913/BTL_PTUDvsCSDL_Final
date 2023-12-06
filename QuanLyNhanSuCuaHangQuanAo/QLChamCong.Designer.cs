@@ -1,4 +1,4 @@
-namespace QuanLyNhanSuCuaHangQuanAo
+﻿namespace QuanLyNhanSuCuaHangQuanAo
 {
     partial class QLChamCong
     {
@@ -31,11 +31,9 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.label4 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tknl = new System.Windows.Forms.CheckBox();
-            this.tkgl = new System.Windows.Forms.CheckBox();
-            this.tkten = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.cbTenNv = new System.Windows.Forms.ComboBox();
+            this.dtpNgayLam = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSogiolam = new System.Windows.Forms.TextBox();
@@ -45,6 +43,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvChamCong = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).BeginInit();
             this.SuspendLayout();
@@ -62,18 +61,17 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(1014, 320);
+            this.txtTimKiem.Location = new System.Drawing.Point(1189, 320);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(245, 32);
+            this.txtTimKiem.Size = new System.Drawing.Size(401, 32);
             this.txtTimKiem.TabIndex = 13;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tknl);
-            this.panel1.Controls.Add(this.tkgl);
-            this.panel1.Controls.Add(this.tkten);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnReset);
+            this.panel1.Controls.Add(this.cbTenNv);
+            this.panel1.Controls.Add(this.dtpNgayLam);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -88,65 +86,46 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1611, 840);
+            this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 11;
             // 
-            // tknl
+            // btnReset
             // 
-            this.tknl.AutoSize = true;
-            this.tknl.Location = new System.Drawing.Point(673, 201);
-            this.tknl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tknl.Name = "tknl";
-            this.tknl.Size = new System.Drawing.Size(185, 20);
-            this.tknl.TabIndex = 35;
-            this.tknl.Text = "Tìm kiếm theo ngày đi làm";
-            this.tknl.UseVisualStyleBackColor = true;
+            this.btnReset.BackColor = System.Drawing.SystemColors.Window;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.reset11;
+            this.btnReset.Location = new System.Drawing.Point(283, 9);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(47, 43);
+            this.btnReset.TabIndex = 51;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // tkgl
+            // cbTenNv
             // 
-            this.tkgl.AutoSize = true;
-            this.tkgl.Location = new System.Drawing.Point(1245, 201);
-            this.tkgl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tkgl.Name = "tkgl";
-            this.tkgl.Size = new System.Drawing.Size(160, 20);
-            this.tkgl.TabIndex = 34;
-            this.tkgl.Text = "Tìm kiếm theo giờ làm";
-            this.tkgl.UseVisualStyleBackColor = true;
+            this.cbTenNv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTenNv.FormattingEnabled = true;
+            this.cbTenNv.Location = new System.Drawing.Point(145, 157);
+            this.cbTenNv.Name = "cbTenNv";
+            this.cbTenNv.Size = new System.Drawing.Size(229, 32);
+            this.cbTenNv.TabIndex = 23;
+            this.cbTenNv.SelectedIndexChanged += new System.EventHandler(this.cbTenNv_SelectedIndexChanged);
             // 
-            // tkten
+            // dtpNgayLam
             // 
-            this.tkten.AutoSize = true;
-            this.tkten.Location = new System.Drawing.Point(142, 201);
-            this.tkten.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tkten.Name = "tkten";
-            this.tkten.Size = new System.Drawing.Size(134, 20);
-            this.tkten.TabIndex = 33;
-            this.tkten.Text = "Tìm kiếm theo tên";
-            this.tkten.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 157);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(229, 32);
-            this.comboBox1.TabIndex = 23;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(673, 154);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(231, 32);
-            this.dateTimePicker1.TabIndex = 22;
+            this.dtpNgayLam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayLam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayLam.Location = new System.Drawing.Point(852, 154);
+            this.dtpNgayLam.Name = "dtpNgayLam";
+            this.dtpNgayLam.Size = new System.Drawing.Size(231, 32);
+            this.dtpNgayLam.TabIndex = 22;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(542, 160);
+            this.label5.Location = new System.Drawing.Point(721, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 24);
             this.label5.TabIndex = 21;
@@ -156,7 +135,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1106, 157);
+            this.label3.Location = new System.Drawing.Point(1416, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 17;
@@ -165,7 +144,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // txtSogiolam
             // 
             this.txtSogiolam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSogiolam.Location = new System.Drawing.Point(1245, 154);
+            this.txtSogiolam.Location = new System.Drawing.Point(1529, 157);
             this.txtSogiolam.Name = "txtSogiolam";
             this.txtSogiolam.Size = new System.Drawing.Size(231, 32);
             this.txtSogiolam.TabIndex = 16;
@@ -182,6 +161,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "   Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -205,7 +185,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.search;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(1325, 295);
+            this.btnTimKiem.Location = new System.Drawing.Point(1609, 310);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(150, 54);
@@ -230,13 +210,14 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // 
             // dgvChamCong
             // 
+            this.dgvChamCong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvChamCong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChamCong.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvChamCong.Location = new System.Drawing.Point(0, 256);
+            this.dgvChamCong.Location = new System.Drawing.Point(0, 369);
             this.dgvChamCong.Name = "dgvChamCong";
             this.dgvChamCong.RowHeadersWidth = 51;
             this.dgvChamCong.RowTemplate.Height = 24;
-            this.dgvChamCong.Size = new System.Drawing.Size(1611, 584);
+            this.dgvChamCong.Size = new System.Drawing.Size(1783, 584);
             this.dgvChamCong.TabIndex = 10;
             this.dgvChamCong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChamCong_CellClick);
             // 
@@ -250,16 +231,24 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.label1.TabIndex = 9;
             this.label1.Text = "Thông tin chấm công";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1186, 292);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Tìm kiếm theo tên:";
+            // 
             // QLChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1611, 840);
+            this.ClientSize = new System.Drawing.Size(1783, 953);
             this.Controls.Add(this.panel1);
             this.Name = "QLChamCong";
             this.Text = "Quản lý chấm công";
-            this.Load += new System.EventHandler(this.QLChamCong_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).EndInit();
@@ -272,7 +261,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgayLam;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSogiolam;
@@ -282,11 +271,8 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvChamCong;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox tknl;
-        private System.Windows.Forms.CheckBox tkgl;
-        private System.Windows.Forms.CheckBox tkten;
-
+        private System.Windows.Forms.ComboBox cbTenNv;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label label2;
     }
 }
-

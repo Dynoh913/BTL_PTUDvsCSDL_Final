@@ -231,5 +231,23 @@
   <ItemGroup>
     <None Include="Resources\search1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sort2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset11.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

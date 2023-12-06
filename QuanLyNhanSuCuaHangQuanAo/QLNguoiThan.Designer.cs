@@ -59,6 +59,7 @@
             // panelQLNT
             // 
             this.panelQLNT.Controls.Add(this.button4);
+
             this.panelQLNT.Controls.Add(this.cbTenNv);
             this.panelQLNT.Controls.Add(this.label5);
             this.panelQLNT.Controls.Add(this.txtTenNT);
@@ -78,6 +79,7 @@
             this.panelQLNT.Name = "panelQLNT";
             this.panelQLNT.Size = new System.Drawing.Size(1783, 953);
             this.panelQLNT.TabIndex = 11;
+
             // 
             // cbTenNv
             // 
@@ -248,6 +250,7 @@
             this.button4.TabIndex = 50;
             this.button4.Text = "Làm trống các textbox";
             this.button4.UseVisualStyleBackColor = true;
+
             // 
             // QLNguoiThan
             // 
@@ -258,15 +261,18 @@
             this.Controls.Add(this.panelQLNT);
             this.Name = "QLNguoiThan";
             this.Text = "Quản lý người thân";
+
             ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).EndInit();
             this.panelQLNT.ResumeLayout(false);
             this.panelQLNT.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiThan)).EndInit();
+
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
         private System.Windows.Forms.ErrorProvider erpBaoLoi;
         private System.Windows.Forms.Panel panelQLNT;
         private System.Windows.Forms.ComboBox cbTenNv;
@@ -285,5 +291,6 @@
         private System.Windows.Forms.DataGridView dgvNguoiThan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
+
     }
 }

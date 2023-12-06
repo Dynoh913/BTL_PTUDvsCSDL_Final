@@ -18,6 +18,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             InitializeComponent();
             loadCbbNV();
             loadData();
+
         }
         private void loadData()
         {

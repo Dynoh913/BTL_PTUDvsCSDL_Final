@@ -1,4 +1,4 @@
-namespace QuanLyNhanSuCuaHangQuanAo
+﻿namespace QuanLyNhanSuCuaHangQuanAo
 {
     partial class QLChamCong
     {
@@ -45,6 +45,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvChamCong = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).BeginInit();
             this.SuspendLayout();
@@ -141,11 +142,13 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(231, 32);
             this.dateTimePicker1.TabIndex = 22;
+
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label5.Location = new System.Drawing.Point(542, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 24);
@@ -156,16 +159,20 @@ namespace QuanLyNhanSuCuaHangQuanAo
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label3.Location = new System.Drawing.Point(1106, 157);
+
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 24);
             this.label3.TabIndex = 17;
             this.label3.Text = "Số giờ làm";
             // 
+
             // txtSogiolam
             // 
             this.txtSogiolam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSogiolam.Location = new System.Drawing.Point(1245, 154);
+
             this.txtSogiolam.Name = "txtSogiolam";
             this.txtSogiolam.Size = new System.Drawing.Size(231, 32);
             this.txtSogiolam.TabIndex = 16;
@@ -182,6 +189,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.btnXoa.TabIndex = 15;
             this.btnXoa.Text = "   Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -255,11 +263,12 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+
             this.ClientSize = new System.Drawing.Size(1611, 840);
+
             this.Controls.Add(this.panel1);
             this.Name = "QLChamCong";
             this.Text = "Quản lý chấm công";
-            this.Load += new System.EventHandler(this.QLChamCong_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).EndInit();
@@ -272,7 +281,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgayLam;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSogiolam;
@@ -282,11 +291,8 @@ namespace QuanLyNhanSuCuaHangQuanAo
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvChamCong;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox tknl;
-        private System.Windows.Forms.CheckBox tkgl;
-        private System.Windows.Forms.CheckBox tkten;
+        private System.Windows.Forms.ComboBox cbTenNv;
+        private System.Windows.Forms.Button btnReset;
 
     }
 }
-

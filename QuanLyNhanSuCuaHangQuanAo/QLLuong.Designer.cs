@@ -98,6 +98,7 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 10;
             // 
+
             // btnGiamDan
             // 
             this.btnGiamDan.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,6 +107,7 @@
             this.btnGiamDan.Name = "btnGiamDan";
             this.btnGiamDan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGiamDan.Size = new System.Drawing.Size(287, 54);
+
             this.btnGiamDan.TabIndex = 29;
             this.btnGiamDan.Text = "   Sắp xếp giảm dần";
             this.btnGiamDan.UseVisualStyleBackColor = true;
@@ -114,12 +116,15 @@
             // btnTangDan
             // 
             this.btnTangDan.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.btnTangDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTangDan.Location = new System.Drawing.Point(191, 310);
             this.btnTangDan.Name = "btnTangDan";
             this.btnTangDan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTangDan.Size = new System.Drawing.Size(287, 54);
+
             this.btnTangDan.TabIndex = 28;
+
             this.btnTangDan.Text = "   Sắp xếp tăng dần";
             this.btnTangDan.UseVisualStyleBackColor = true;
             this.btnTangDan.Click += new System.EventHandler(this.btnTangDan_Click);
@@ -166,6 +171,7 @@
             // 
             // txtThang
             // 
+
             this.txtThang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThang.Location = new System.Drawing.Point(900, 157);
             this.txtThang.Name = "txtThang";
@@ -206,6 +212,7 @@
             // 
             // dgvLuong
             // 
+
             this.dgvLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLuong.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvLuong.Location = new System.Drawing.Point(0, 369);
@@ -262,6 +269,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnGiamDan;
         private System.Windows.Forms.Button btnTangDan;
+
         private System.Windows.Forms.ErrorProvider erpBaoLoi;
     }
 }

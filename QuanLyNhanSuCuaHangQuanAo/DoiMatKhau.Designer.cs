@@ -30,24 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
             this.panel1 = new System.Windows.Forms.Panel();
-
-            this.btnDoiMatKhau = new System.Windows.Forms.Button();
+            this.btnDoimk = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-
-            this.txtNewPass2 = new System.Windows.Forms.TextBox();
+            this.txtNhaplaimatkhau = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtNewPass1 = new System.Windows.Forms.TextBox();
+            this.txtMatkhaumoi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtOldPass = new System.Windows.Forms.TextBox();
+            this.txtMatkhau = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtUsername2 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -59,23 +57,23 @@
             // 
             // panel1
             // 
-
-            this.panel1.Controls.Add(this.btnDoiMatKhau);
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.btnDoimk);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtNewPass2);
+            this.panel1.Controls.Add(this.txtNhaplaimatkhau);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.txtNewPass1);
+            this.panel1.Controls.Add(this.txtMatkhaumoi);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtOldPass);
+            this.panel1.Controls.Add(this.txtMatkhau);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtUsername2);
+            this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -84,21 +82,20 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 12;
             // 
-            // btnDoiMatKhau
+            // btnDoimk
             // 
-            this.btnDoiMatKhau.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnDoiMatKhau.FlatAppearance.BorderSize = 0;
-            this.btnDoiMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiMatKhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMatKhau.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDoiMatKhau.Location = new System.Drawing.Point(776, 698);
-            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
-            this.btnDoiMatKhau.Size = new System.Drawing.Size(140, 54);
-            this.btnDoiMatKhau.TabIndex = 31;
-            this.btnDoiMatKhau.Text = "Đổi mật khẩu";
-            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
-            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
-
+            this.btnDoimk.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnDoimk.FlatAppearance.BorderSize = 0;
+            this.btnDoimk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoimk.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoimk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDoimk.Location = new System.Drawing.Point(776, 698);
+            this.btnDoimk.Name = "btnDoimk";
+            this.btnDoimk.Size = new System.Drawing.Size(140, 54);
+            this.btnDoimk.TabIndex = 31;
+            this.btnDoimk.Text = "Đổi mật khẩu";
+            this.btnDoimk.UseVisualStyleBackColor = false;
+            this.btnDoimk.Click += new System.EventHandler(this.btnDoimk_Click);
             // 
             // pictureBox4
             // 
@@ -144,17 +141,16 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Mật khẩu mới";
             // 
-            // txtNewPass2
+            // txtNhaplaimatkhau
             // 
-            this.txtNewPass2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNewPass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNewPass2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPass2.Location = new System.Drawing.Point(706, 595);
-            this.txtNewPass2.Name = "txtNewPass2";
-            this.txtNewPass2.Size = new System.Drawing.Size(298, 25);
-            this.txtNewPass2.TabIndex = 26;
-            this.txtNewPass2.UseSystemPasswordChar = true;
-
+            this.txtNhaplaimatkhau.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNhaplaimatkhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNhaplaimatkhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNhaplaimatkhau.Location = new System.Drawing.Point(706, 595);
+            this.txtNhaplaimatkhau.Name = "txtNhaplaimatkhau";
+            this.txtNhaplaimatkhau.Size = new System.Drawing.Size(341, 25);
+            this.txtNhaplaimatkhau.TabIndex = 27;
+            this.txtNhaplaimatkhau.UseSystemPasswordChar = true;
             // 
             // pictureBox3
             // 
@@ -167,18 +163,16 @@
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
             // 
-
-            // txtNewPass1
+            // txtMatkhaumoi
             // 
-            this.txtNewPass1.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNewPass1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNewPass1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPass1.Location = new System.Drawing.Point(706, 491);
-            this.txtNewPass1.Name = "txtNewPass1";
-            this.txtNewPass1.Size = new System.Drawing.Size(298, 25);
-            this.txtNewPass1.TabIndex = 25;
-            this.txtNewPass1.UseSystemPasswordChar = true;
-
+            this.txtMatkhaumoi.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMatkhaumoi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatkhaumoi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatkhaumoi.Location = new System.Drawing.Point(706, 491);
+            this.txtMatkhaumoi.Name = "txtMatkhaumoi";
+            this.txtMatkhaumoi.Size = new System.Drawing.Size(341, 25);
+            this.txtMatkhaumoi.TabIndex = 27;
+            this.txtMatkhaumoi.UseSystemPasswordChar = true;
             // 
             // label5
             // 
@@ -209,17 +203,16 @@
             this.label3.TabIndex = 28;
             this.label3.Text = "__________________________________________";
             // 
-            // txtOldPass
+            // txtMatkhau
             // 
-            this.txtOldPass.BackColor = System.Drawing.SystemColors.Window;
-            this.txtOldPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOldPass.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOldPass.Location = new System.Drawing.Point(706, 383);
-            this.txtOldPass.Name = "txtOldPass";
-            this.txtOldPass.Size = new System.Drawing.Size(298, 25);
-            this.txtOldPass.TabIndex = 24;
-            this.txtOldPass.UseSystemPasswordChar = true;
-
+            this.txtMatkhau.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMatkhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatkhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatkhau.Location = new System.Drawing.Point(706, 383);
+            this.txtMatkhau.Name = "txtMatkhau";
+            this.txtMatkhau.Size = new System.Drawing.Size(341, 25);
+            this.txtMatkhau.TabIndex = 27;
+            this.txtMatkhau.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -252,18 +245,15 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Tên tài khoản";
             // 
-
-            // txtUsername2
+            // txtUsername
             // 
-            this.txtUsername2.BackColor = System.Drawing.SystemColors.Window;
-            this.txtUsername2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername2.Enabled = false;
-            this.txtUsername2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername2.Location = new System.Drawing.Point(706, 272);
-            this.txtUsername2.Name = "txtUsername2";
-            this.txtUsername2.Size = new System.Drawing.Size(298, 25);
-            this.txtUsername2.TabIndex = 23;
-
+            this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(706, 272);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(341, 25);
+            this.txtUsername.TabIndex = 23;
             // 
             // label8
             // 
@@ -307,13 +297,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
-
-        private System.Windows.Forms.TextBox txtUsername2;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtOldPass;
-
+        private System.Windows.Forms.TextBox txtMatkhau;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
@@ -321,12 +309,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
-
-        private System.Windows.Forms.TextBox txtNewPass2;
-        private System.Windows.Forms.TextBox txtNewPass1;
+        private System.Windows.Forms.TextBox txtNhaplaimatkhau;
+        private System.Windows.Forms.TextBox txtMatkhaumoi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDoiMatKhau;
-
+        private System.Windows.Forms.Button btnDoimk;
     }
 }

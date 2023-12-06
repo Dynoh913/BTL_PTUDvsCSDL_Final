@@ -10,8 +10,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
 {
     internal class Database
     {
-        private static string connStr = "Data Source=DESKTOP-DAVINCI;Initial Catalog=QuanLyNhanSuCuaHangQuanAo;Integrated Security=True";
-
+        private static string connStr = "Data Source=DESKTOP-KB3GR2O\\LAMLYLE;Initial Catalog=QuanLyNhanSuCuaHangQuanAo;Integrated Security=True";
         private static SqlConnection conn = new SqlConnection(connStr);
 
         public static void Execute(string sql, Dictionary<string, object> parameters = null)
@@ -45,12 +44,5 @@ namespace QuanLyNhanSuCuaHangQuanAo
             conn.Close();
             return table;
         }
-
-        public SqlConnection getConn()
-        {
-            return conn;
-        }
-
-
     }
 }

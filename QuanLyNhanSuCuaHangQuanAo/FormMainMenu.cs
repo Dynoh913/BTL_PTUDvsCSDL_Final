@@ -17,20 +17,18 @@ namespace QuanLyNhanSuCuaHangQuanAo
         public FormMainMenu()
         {
             InitializeComponent();
-            btnClose.Visible = false;
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
 
-
         private string TaiKhoanF1;
         private string MatKhauF1;
-        public FormMainMenu(string tk,string mk) : this() 
-        {
-               TaiKhoanF1 = tk;
-                MatKhauF1 = mk;
-        }
 
+        public FormMainMenu(string tk, string mk) : this()
+        {
+            TaiKhoanF1 = tk;
+            MatKhauF1 = mk;
+        }
 
         private void activeBtn(object btnSender, Form f, Color color)
         {
@@ -47,7 +45,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
                     currentBtn.BackColor = color;
                     currentBtn.Font = new System.Drawing.Font("Calibri", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitle.BackColor = color;
-                    btnClose.Visible = true;
                 }
                 activeForm = f;
                 f.TopLevel = false;
@@ -60,7 +57,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 labelTitle.Text = f.Text.ToUpper();
             }
         }
-
         private void showControl(Control ctrl)
         {
             panelMain.Controls.Clear();
@@ -86,18 +82,15 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             activeBtn(sender, new QLLuong(), Color.FromArgb(244, 164, 96));
         }
-
-
         private void btnDMK_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new DoiMatKhau(), Color.FromArgb(240, 255, 240));
 
             fDoiMatKhau Child = new fDoiMatKhau(TaiKhoanF1, MatKhauF1);
             showControl(Child);
-   
+
 
         }
-
         private void btnQLCC_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new QLChamCong(), Color.FromArgb(238, 232, 170));
@@ -111,18 +104,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             LoginForm f = new LoginForm();
             this.Hide();
             f.ShowDialog();
-        }
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            disableBtn();
-            labelTitle.Text = "TRANG CHỦ";
-            panelTitle.BackColor = Color.FromArgb(39, 164, 242);
-            currentBtn = null;
-            btnClose.Visible = false;
         }
 
     }

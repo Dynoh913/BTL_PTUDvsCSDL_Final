@@ -17,7 +17,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             InitializeComponent();
         }
-
         private string tkc;
         private string mkc;
         public fDoiMatKhau(string tk, string mk) : this()
@@ -27,8 +26,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             txtUsername2.Text = tkc;
 
         }
-
-
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
             if (txtOldPass.Text == mkc)
@@ -82,7 +79,5 @@ namespace QuanLyNhanSuCuaHangQuanAo
             }
 
         }
-
-       
     }
 }

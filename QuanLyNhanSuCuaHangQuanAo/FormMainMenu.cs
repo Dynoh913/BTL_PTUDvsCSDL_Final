@@ -21,17 +21,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
-
-
-        private string TaiKhoanF1;
-        private string MatKhauF1;
-        public FormMainMenu(string tk,string mk) : this() 
-        {
-               TaiKhoanF1 = tk;
-                MatKhauF1 = mk;
-        }
-
-
         private void activeBtn(object btnSender, Form f, Color color)
         {
             if (btnSender != null)
@@ -60,13 +49,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 labelTitle.Text = f.Text.ToUpper();
             }
         }
-
-        private void showControl(Control ctrl)
-        {
-            panelMain.Controls.Clear();
-            ctrl.Dock = DockStyle.Fill;
-            panelMain.Controls.Add(ctrl);
-        }
         private void disableBtn()
         {
             foreach (Control btn in panelMenu.Controls)
@@ -86,18 +68,10 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             activeBtn(sender, new QLLuong(), Color.FromArgb(244, 164, 96));
         }
-
-
         private void btnDMK_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new DoiMatKhau(), Color.FromArgb(240, 255, 240));
-
-            fDoiMatKhau Child = new fDoiMatKhau(TaiKhoanF1, MatKhauF1);
-            showControl(Child);
-   
-
         }
-
         private void btnQLCC_Click(object sender, EventArgs e)
         {
             activeBtn(sender, new QLChamCong(), Color.FromArgb(238, 232, 170));
@@ -124,6 +98,5 @@ namespace QuanLyNhanSuCuaHangQuanAo
             currentBtn = null;
             btnClose.Visible = false;
         }
-
     }
 }

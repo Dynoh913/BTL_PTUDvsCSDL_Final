@@ -15,119 +15,170 @@ namespace QuanLyNhanSuCuaHangQuanAo
         public QLNV()
         {
             InitializeComponent();
+            loadData();
         }
-
-        private void QLNV_Load(object sender, EventArgs e)
+        private void loadData()
         {
             dgvNhanVien.DataSource = Database.Query("select * from NhanVien");
+            txtMaNv.Text = "";
+            txtDiaChi.Text = "";
+            txtTenNv.Text = "";
+            txtSdt.Text = "";
+            foreach (Control control in panelQLNV.Controls)
+            {
+                if (control is CheckBox checkBox && checkBox.Checked)
+                {
+                    checkBox.Checked = false;
+                }
+            }
         }
-
+        private bool checkForm()
+        {
+            bool ketQua = true;
+            erpBaoLoi.Clear();
+            if (txtMaNv.Text == "")
+            {
+                erpBaoLoi.SetError(txtMaNv, "Chưa điền mã nhân viên.");
+                ketQua = false;
+            }
+            if (txtTenNv.Text == "")
+            {
+                erpBaoLoi.SetError(txtTenNv, "Chưa điền họ tên.");
+                ketQua = false;
+            }
+            if (txtDiaChi.Text == "")
+            {
+                erpBaoLoi.SetError(txtDiaChi, "Chưa điền địa chỉ.");
+                ketQua = false;
+            }
+            if (txtSdt.Text == "")
+            {
+                erpBaoLoi.SetError(txtDiaChi, "Chưa điền số điện thoại.");
+                ketQua = false;
+            }
+            if (cbCv.Text == "")
+            {
+                erpBaoLoi.SetError(cbCv, "Chưa chọn chức vụ.");
+                ketQua = false;
+            }
+            return ketQua;
+        }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!checkForm())
+                {
+                    return;
+                }
+                string query = "insert into NhanVien(MaNV, TenNV, NgaySinh, SoDT, DiaChi, ChucVu) values (@MaNV, @TenNV, @NgaySinh, @SoDT, @DiaChi, @ChucVu)";
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add("@MaNV", txtMaNv.Text);
+                parameters.Add("@TenNV", txtTenNv.Text);
+                parameters.Add("@NgaySinh", dtpNs.Value);
+                parameters.Add("@SoDT", txtSdt.Text);
+                parameters.Add("@DiaChi", txtDiaChi.Text);
+                parameters.Add("@ChucVu", cbCv.Text);
+                Database.Execute(query, parameters);
+                loadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!checkForm())
+                {
+                    return;
+                }
+                string query = "update NhanVien set TenNV=@TenNV, NgaySinh=@NgaySinh, SoDT=@SoDT, DiaChi=@DiaChi, ChucVu=@ChucVu where MaNV=@MaNV";
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add("@MaNV", txtMaNv.Text);
+                parameters.Add("@TenNV", txtTenNv.Text);
+                parameters.Add("@NgaySinh", dtpNs.Value);
+                parameters.Add("@SoDT", txtSdt.Text);
+                parameters.Add("@DiaChi", txtDiaChi.Text);
+                parameters.Add("@ChucVu", cbCv.Text);
+                Database.Execute(query, parameters);
+                loadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!checkForm())
+                {
+                    return;
+                }
+                string query = "exec XoaNhanVien @MaNV";
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add("@MaNV", txtMaNv.Text);
+                Database.Execute(query, parameters);
+                loadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            loadData();
+        }
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            mnv.ReadOnly = true;
-            button2.Enabled = true;
-            button3.Enabled = true;
-            mnv.Text = dgvNhanVien.CurrentRow.Cells[0].Value.ToString();
-            ten.Text = dgvNhanVien.CurrentRow.Cells[1].Value.ToString();
-            ns.Value = Convert.ToDateTime(dgvNhanVien.CurrentRow.Cells[2].Value);
-            sdt.Text = dgvNhanVien.CurrentRow.Cells[3].Value.ToString();
-            dc.Text = dgvNhanVien.CurrentRow.Cells[4].Value.ToString();
-            cv.SelectedIndex = cv.FindString(dgvNhanVien.CurrentRow.Cells[5].Value.ToString());
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            mnv.ReadOnly = false;
-            button2.Enabled = false;
-            button3.Enabled = false;
-            mnv.Text = "";
-            ten.Text = "";
-            ns.Value = Convert.ToDateTime("01/01/2000");
-            sdt.Text = "";
-            dc.Text = "";
-            cv.SelectedIndex = -1;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters.Add("@MaNV", mnv.Text);
-            Database.Execute("delete from NhanVien where MaNV=@MaNV", parameters);
-            dgvNhanVien.DataSource = Database.Query("select * from NhanVien");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
+            if (e.RowIndex > -1 && e.ColumnIndex > -1)
             {
-                Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add("@MaNV", mnv.Text);
-                parameters.Add("@TenNV", ten.Text);
-                parameters.Add("@NgaySinh", ns.Value);
-                parameters.Add("@SoDT", sdt.Text);
-                parameters.Add("@DiaChi", dc.Text);
-                parameters.Add("@ChucVu", cv.Text);
-                Database.Execute("insert into NhanVien values (@MaNV,@TenNV,@NgaySinh,@SoDT,@DiaChi,@ChucVu)", parameters);
-                dgvNhanVien.DataSource = Database.Query("select * from NhanVien");
-            }
-            catch 
-            {
-                MessageBox.Show("Lỗi", "Thông báo");
+                txtMaNv.Text = dgvNhanVien.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTenNv.Text = dgvNhanVien.Rows[e.RowIndex].Cells[1].Value.ToString();
+                dtpNs.Text = dgvNhanVien.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtSdt.Text = dgvNhanVien.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtDiaChi.Text = dgvNhanVien.Rows[e.RowIndex].Cells[4].Value.ToString();
+                cbCv.Text = dgvNhanVien.Rows[e.RowIndex].Cells[5].Value.ToString();
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add("@MaNV", mnv.Text);
-                parameters.Add("@TenNV", ten.Text);
-                parameters.Add("@NgaySinh", ns.Value);
-                parameters.Add("@SoDT", sdt.Text);
-                parameters.Add("@DiaChi", dc.Text);
-                parameters.Add("@ChucVu", cv.Text);
-                Database.Execute("update NhanVien set TenNV=@TenNV,NgaySinh=@NgaySinh,SoDT=@SoDT,DiaChi=@DiaChi,ChucVu=@ChucVu where MaNV=@MaNV", parameters);
-                dgvNhanVien.DataSource = Database.Query("select * from NhanVien");
-            }
-            catch
-            {
-                MessageBox.Show("Lỗi", "Thông báo");
-            }
-        }
-
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string cmd = "select * from NhanVien where 1=1";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
-            if (tkmanv.Checked == true) {
-                parameters.Add("@MaNV", mnv.Text);
+            if (chbMaNv.Checked == true)
+            {
                 cmd = cmd + " and MaNV=@MaNV";
+                parameters.Add("@MaNV", txtMaNv.Text);
             }
-            if (tkten.Checked == true)
+            if (chbTenNv.Checked == true)
             {
-                parameters.Add("@TenNV", ten.Text);
                 cmd = cmd + " and TenNV like '%'+@TenNV+'%'";
+                parameters.Add("@TenNV", txtTenNv.Text);
             }
-            if (tkns.Checked == true)
+            if (chbNs.Checked == true)
             {
-                parameters.Add("@NgaySinh", ns.Value);
                 cmd = cmd + " and NgaySinh=@NgaySinh";
+                parameters.Add("@NgaySinh", dtpNs.Value);
             }
-            if (tksdt.Checked == true)
+            if (chbSdt.Checked == true)
             {
-                parameters.Add("@SoDT", sdt.Text);
-                cmd = cmd + " and SoDT=@SoDT";
+                cmd = cmd + " and SoDT like '%'+@SoDT+'%'";
+                parameters.Add("@SoDT", txtSdt.Text);
             }
-            if (tkdc.Checked == true)
+            if (chbDiaChi.Checked == true)
             {
-                parameters.Add("@DiaChi", dc.Text);
                 cmd = cmd + " and DiaChi like '%'+@DiaChi+'%'";
+                parameters.Add("@DiaChi", txtDiaChi.Text);
             }
-            if (tkcv.Checked == true)
+            if (chbCv.Checked == true)
             {
-                parameters.Add("@ChucVu", cv.Text);
-                cmd = cmd + " and ChucVu like '%'+ChucVu+'%'";
+                cmd = cmd + " and ChucVu=@ChucVu";
+                parameters.Add("@ChucVu", cbCv.SelectedItem.ToString());
             }
             dgvNhanVien.DataSource = Database.Query(cmd, parameters);
         }

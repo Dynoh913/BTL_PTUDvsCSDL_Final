@@ -41,11 +41,14 @@
             this.btnQLL = new System.Windows.Forms.Button();
             this.btnQLNV = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -224,6 +227,27 @@
             this.btnQLL.UseVisualStyleBackColor = false;
             this.btnQLL.Click += new System.EventHandler(this.btnQLL_Click);
             // 
+            // btnQLNT
+            // 
+            this.btnQLNT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(194)))), ((int)(((byte)(247)))));
+            this.btnQLNT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLNT.FlatAppearance.BorderSize = 0;
+            this.btnQLNT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLNT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLNT.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnQLNT.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.relations2;
+            this.btnQLNT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLNT.Location = new System.Drawing.Point(0, 246);
+            this.btnQLNT.Name = "btnQLNT";
+            this.btnQLNT.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnQLNT.Size = new System.Drawing.Size(274, 83);
+            this.btnQLNT.TabIndex = 7;
+            this.btnQLNT.Text = "   Quản lý người thân";
+            this.btnQLNT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLNT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQLNT.UseVisualStyleBackColor = false;
+            this.btnQLNT.Click += new System.EventHandler(this.btnQLNT_Click);
+            // 
             // btnQLNV
             // 
             this.btnQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(194)))), ((int)(((byte)(247)))));
@@ -257,11 +281,55 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // panelTitle
+            // 
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(164)))), ((int)(((byte)(242)))));
+            this.panelTitle.Controls.Add(this.labelTitle);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(274, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(1108, 100);
+            this.panelTitle.TabIndex = 1;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(466, 31);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(155, 35);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "TRANG CHỦ";
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelMain.BackgroundImage = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.bg32;
+            this.panelMain.Controls.Add(this.pictureBox2);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(274, 100);
+            this.panelMain.MinimumSize = new System.Drawing.Size(950, 500);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1108, 656);
+            this.panelMain.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.clothing_store_logo_design_inspiration_cloth_shop_logo_clothes_logo_illustration_vector;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1108, 656);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1382, 653);
+            this.ClientSize = new System.Drawing.Size(1382, 756);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
@@ -269,11 +337,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
             this.panelMenu.ResumeLayout(false);
+
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+
             this.ResumeLayout(false);
 
         }
@@ -289,7 +359,6 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnQLCC;
         private System.Windows.Forms.Button btnQLNT;

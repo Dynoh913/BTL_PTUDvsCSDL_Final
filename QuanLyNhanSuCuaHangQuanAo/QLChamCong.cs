@@ -17,17 +17,21 @@ namespace QuanLyNhanSuCuaHangQuanAo
         public QLChamCong()
         {
             InitializeComponent();
-            loadCbbNV();
+
+            LoadEmployeeNames();
             loadData();
         }
+
+
         private void loadData()
         {
             dgvChamCong.DataSource = Database.Query("select MaChamCong,TenNV,NgayDiLam,SoGioLam from ChamCong inner join NhanVien on ChamCong.MaNV = NhanVien.MaNV");
             txtSogiolam.Text = "";
             txtTimKiem.Text = "";
-            maChamCong = "";
+            
         }
-        private void loadCbbNV()
+        private void LoadEmployeeNames()
+
         {
             cbTenNv.ValueMember = "MaNV";
             cbTenNv.DisplayMember = "TenNV";
@@ -53,13 +57,25 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             try
             {
-                string query = "insert ChamCong(MaNV,NgayDiLam,SoGioLam) values (@MaNV,@NgayDiLam,@SoGioLam)";
-                Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add("@MaNV", cbTenNv.SelectedValue.ToString());
-                parameters.Add("@NgayDiLam", dtpNgayLam.Value);
-                parameters.Add("@SoGioLam", txtSogiolam.Text);
-                Database.Execute(query, parameters);
-                loadData();
+
+                Dictionary<string, object> paramNV = new Dictionary<string, object>();
+                paramNV.Add("@TenNV", comboBox1.Text);
+                var maNVTable = Database.Query("SELECT MaNV FROM NhanVien WHERE TenNV = @TenNV", paramNV);
+                if (maNVTable.Rows.Count > 0)
+                {
+                    string maNV = maNVTable.Rows[0]["MaNV"].ToString();
+                    Dictionary<string, object> parameters = new Dictionary<string, object>();
+                    parameters.Add("@MaNV", maNV);
+                    parameters.Add("@NgayDiLam", dateTimePicker1.Value);
+                    parameters.Add("@SoGioLam", txtSogiolam.Text);
+                    Database.Execute("INSERT INTO ChamCong (MaNV, NgayDiLam, SoGioLam) VALUES (@MaNV, @NgayDiLam, @SoGioLam)", parameters);
+                    dgvChamCong.DataSource = Database.Query("SELECT TenNV, NgayDilam, SoGioLam FROM NhanVien INNER JOIN ChamCong ON NhanVien.MaNV = ChamCong.MaNV");
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn nhân viên.", "Thông báo");
+                }
+
             }
             catch (Exception ex)
             {
@@ -72,11 +88,20 @@ namespace QuanLyNhanSuCuaHangQuanAo
             {
                 string query = "update ChamCong set NgayDiLam=@NgayDiLam,SoGioLam=@SoGioLam where MaChamCong=@MaChamCong";
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add("@MaChamCong", maChamCong);
-                parameters.Add("@NgayDiLam", dtpNgayLam.Value);
+
+                parameters.Add("@TenNV", comboBox1.Text);
+                parameters.Add("@NgayDiLam", dateTimePicker1.Value);
                 parameters.Add("@SoGioLam", txtSogiolam.Text);
-                Database.Execute(query, parameters);
-                loadData();
+
+                var maNVTable = Database.Query("SELECT MaNV FROM NhanVien WHERE TenNV = @TenNV", parameters);
+                if (maNVTable.Rows.Count > 0)
+                {
+                    string maNV = maNVTable.Rows[0]["MaNV"].ToString();
+                    parameters.Add("@MaNV", maNV);
+                    Database.Execute("UPDATE ChamCong SET NgayDiLam = @NgayDiLam, SoGioLam = @SoGioLam WHERE MaNV = @MaNV AND NgayDiLam = @NgayDiLam", parameters);
+                    RefreshDataGridView();
+                }
+
             }
             catch (Exception ex)
             {
@@ -123,13 +148,23 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 query += " and NgayDiLam=@NgayDiLam";
                 parameters.Add("@NgayDiLam", dtpNgayLam.Value);
             }
-            dgvChamCong.DataSource = Database.Query(query, parameters);
+            if (tkgl.Checked == true)
+            {
+                parameters.Add("@SoGioLam", txtSogiolam.Text);
+                cmd = cmd + " and SoGioLam=@SoGioLam";
+            }
+            dgvChamCong.DataSource = Database.Query(cmd, parameters);
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            cbTenNv.Text = "";
-            loadData();
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
+            comboBox1.Text = dgvChamCong.CurrentRow.Cells[0].Value.ToString();
+            dateTimePicker1.Value = Convert.ToDateTime(dgvChamCong.CurrentRow.Cells[1].Value);
+            txtSogiolam.Text = dgvChamCong.CurrentRow.Cells[2].Value.ToString();
+
         }
     }
 }

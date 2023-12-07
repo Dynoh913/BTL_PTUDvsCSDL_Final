@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace QuanLyNhanSuCuaHangQuanAo
 {
@@ -26,6 +27,8 @@ namespace QuanLyNhanSuCuaHangQuanAo
             txtUsername2.Text = tkc;
 
         }
+
+
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
             if (txtOldPass.Text == mkc)
@@ -53,10 +56,12 @@ namespace QuanLyNhanSuCuaHangQuanAo
                             cmd.Parameters.AddWithValue("@NewMK", txtNewPass1.Text);
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo");
+                            mkc = txtNewPass1.Text;
                             txtOldPass.Clear();
                             txtNewPass1.Clear();
                             txtNewPass2.Clear();
                             txtOldPass.Focus();
+                              
 
                         }
                     }

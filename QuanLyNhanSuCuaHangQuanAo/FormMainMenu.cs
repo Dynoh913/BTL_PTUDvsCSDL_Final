@@ -14,6 +14,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
     {
         private Button currentBtn;
         private Form activeForm;
+        private UserControl activeFormUC;
         public FormMainMenu()
         {
             InitializeComponent();
@@ -57,6 +58,32 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 labelTitle.Text = f.Text.ToUpper();
             }
         }
+
+        private void activeBtnUC(object btnSender, UserControl f, Color color)
+        {
+            if (btnSender != null)
+            {
+                if (activeFormUC != null)
+                {
+                    activeFormUC.Hide();
+                }
+                if (currentBtn != (Button)btnSender)
+                {
+                    disableBtn();
+                    currentBtn = (Button)btnSender;
+                    currentBtn.BackColor = color;
+                    currentBtn.Font = new System.Drawing.Font("Calibri", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    panelTitle.BackColor = color;
+                }
+                activeFormUC = f;
+                f.Dock = DockStyle.Fill;
+                this.panelMain.Controls.Add(f);
+                this.panelMain.Tag = f;
+                f.BringToFront();
+                f.Show();
+                labelTitle.Text = f.Text.ToUpper();
+            }
+        }
         private void showControl(Control ctrl)
         {
             panelMain.Controls.Clear();
@@ -84,7 +111,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         }
         private void btnDMK_Click(object sender, EventArgs e)
         {
-            activeBtn(sender, new DoiMatKhau(), Color.FromArgb(240, 255, 240));
+            activeBtnUC(sender, new fDoiMatKhau(), Color.FromArgb(240, 255, 240));
 
             fDoiMatKhau Child = new fDoiMatKhau(TaiKhoanF1, MatKhauF1);
             showControl(Child);

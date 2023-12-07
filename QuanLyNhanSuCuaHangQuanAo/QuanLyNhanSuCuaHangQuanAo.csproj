@@ -47,12 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
-    <Compile Include="DoiMatKhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DoiMatKhau.Designer.cs">
-      <DependentUpon>DoiMatKhau.cs</DependentUpon>
-    </Compile>
     <Compile Include="fDoiMatKhau.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,9 +91,6 @@
     <Compile Include="QLNV.Designer.cs">
       <DependentUpon>QLNV.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DoiMatKhau.resx">
-      <DependentUpon>DoiMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fDoiMatKhau.resx">
       <DependentUpon>fDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>

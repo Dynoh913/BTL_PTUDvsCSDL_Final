@@ -196,6 +196,7 @@
             // 
             // cbCv
             // 
+            this.cbCv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCv.FormattingEnabled = true;
             this.cbCv.Items.AddRange(new object[] {

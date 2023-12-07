@@ -26,6 +26,10 @@ namespace QuanLyNhanSuCuaHangQuanAo
             txtSogiolam.Text = "";
             txtTimKiem.Text = "";
             maChamCong = "";
+            dgvChamCong.Columns[0].HeaderText = "Mã chấm công";
+            dgvChamCong.Columns[1].HeaderText = "Tên nhân viên";
+            dgvChamCong.Columns[2].HeaderText = "Ngày đi làm";
+            dgvChamCong.Columns[3].HeaderText = "Số giờ làm";
         }
         private void loadCbbNV()
         {

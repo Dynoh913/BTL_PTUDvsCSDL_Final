@@ -93,3 +93,11 @@ select * from TinhLuongTheoNam(2023)
 select * from TinhLuongTheoNam(2024)
 
 select * from ChamCong
+
+create procedure XoaNhanVien
+@MaNV int	
+as begin	
+delete from NguoiThan where MaNV=@MaNV	
+delete from ChamCong where MaNV=@MaNV	
+delete from NhanVien where MaNV=@MaNV	
+end

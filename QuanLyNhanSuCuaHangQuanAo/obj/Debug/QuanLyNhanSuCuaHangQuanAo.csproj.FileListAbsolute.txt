@@ -1,0 +1,17 @@
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\bin\Debug\QuanLyNhanSuCuaHangQuanAo.exe.config
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\bin\Debug\QuanLyNhanSuCuaHangQuanAo.exe
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\bin\Debug\QuanLyNhanSuCuaHangQuanAo.pdb
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.DoiMatKhau.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.fDoiMatKhau.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.LoginForm.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.FormMainMenu.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.Properties.Resources.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.QLChamCong.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.QLLuong.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.QLNguoiThan.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.QLNV.resources
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.exe
+C:\Users\Admin\Downloads\BTL_PTUDvsCSDL_Final-main\QuanLyNhanSuCuaHangQuanAo\obj\Debug\QuanLyNhanSuCuaHangQuanAo.pdb

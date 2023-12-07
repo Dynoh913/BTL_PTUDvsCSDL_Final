@@ -38,7 +38,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtMatkhau = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -145,16 +145,16 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Mật khẩu";
             // 
-            // txtMatkhau
+            // txtPassword
             // 
-            this.txtMatkhau.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMatkhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatkhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatkhau.Location = new System.Drawing.Point(57, 460);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(298, 25);
-            this.txtMatkhau.TabIndex = 7;
-            this.txtMatkhau.UseSystemPasswordChar = true;
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(57, 460);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(298, 25);
+            this.txtPassword.TabIndex = 7;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -173,7 +173,7 @@
             this.ClientSize = new System.Drawing.Size(450, 600);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtMatkhau);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
@@ -205,7 +205,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtMatkhau;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label4;
     }
 }

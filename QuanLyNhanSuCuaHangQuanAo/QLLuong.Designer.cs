@@ -33,6 +33,7 @@
             this.txtNgay = new System.Windows.Forms.TextBox();
             this.txtTk = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
             this.btnGiamDan = new System.Windows.Forms.Button();
             this.btnTangDan = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.dgvLuong = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.erpBaoLoi = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).BeginInit();
@@ -62,6 +64,7 @@
             // 
             // txtNgay
             // 
+            this.txtNgay.Enabled = false;
             this.txtNgay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgay.Location = new System.Drawing.Point(200, 157);
             this.txtNgay.Name = "txtNgay";
@@ -71,13 +74,15 @@
             // txtTk
             // 
             this.txtTk.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTk.Location = new System.Drawing.Point(1343, 320);
+            this.txtTk.Location = new System.Drawing.Point(1188, 320);
             this.txtTk.Name = "txtTk";
-            this.txtTk.Size = new System.Drawing.Size(245, 32);
+            this.txtTk.Size = new System.Drawing.Size(400, 32);
             this.txtTk.TabIndex = 13;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.btnReset);
             this.panel1.Controls.Add(this.btnGiamDan);
             this.panel1.Controls.Add(this.btnTangDan);
             this.panel1.Controls.Add(this.label5);
@@ -98,17 +103,29 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 10;
             // 
-
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.Window;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.reset11;
+            this.btnReset.Location = new System.Drawing.Point(226, 9);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(47, 43);
+            this.btnReset.TabIndex = 51;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // btnGiamDan
             // 
             this.btnGiamDan.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiamDan.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.sort2;
             this.btnGiamDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGiamDan.Location = new System.Drawing.Point(484, 310);
             this.btnGiamDan.Name = "btnGiamDan";
             this.btnGiamDan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGiamDan.Size = new System.Drawing.Size(287, 54);
-
-            this.btnGiamDan.TabIndex = 29;
+            this.btnGiamDan.TabIndex = 27;
             this.btnGiamDan.Text = "   Sắp xếp giảm dần";
             this.btnGiamDan.UseVisualStyleBackColor = true;
             this.btnGiamDan.Click += new System.EventHandler(this.btnGiamDan_Click);
@@ -116,15 +133,13 @@
             // btnTangDan
             // 
             this.btnTangDan.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
+            this.btnTangDan.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.sort1;
             this.btnTangDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTangDan.Location = new System.Drawing.Point(191, 310);
             this.btnTangDan.Name = "btnTangDan";
             this.btnTangDan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTangDan.Size = new System.Drawing.Size(287, 54);
-
-            this.btnTangDan.TabIndex = 28;
-
+            this.btnTangDan.TabIndex = 26;
             this.btnTangDan.Text = "   Sắp xếp tăng dần";
             this.btnTangDan.UseVisualStyleBackColor = true;
             this.btnTangDan.Click += new System.EventHandler(this.btnTangDan_Click);
@@ -171,7 +186,7 @@
             // 
             // txtThang
             // 
-
+            this.txtThang.Enabled = false;
             this.txtThang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThang.Location = new System.Drawing.Point(900, 157);
             this.txtThang.Name = "txtThang";
@@ -212,7 +227,7 @@
             // 
             // dgvLuong
             // 
-
+            this.dgvLuong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLuong.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvLuong.Location = new System.Drawing.Point(0, 369);
@@ -235,6 +250,15 @@
             // erpBaoLoi
             // 
             this.erpBaoLoi.ContainerControl = this;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(1185, 301);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 16);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "Tìm kiếm theo tên:";
             // 
             // QLLuong
             // 
@@ -269,7 +293,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnGiamDan;
         private System.Windows.Forms.Button btnTangDan;
-
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ErrorProvider erpBaoLoi;
+        private System.Windows.Forms.Label label6;
     }
 }

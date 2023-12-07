@@ -11,23 +11,22 @@ using System.Windows.Forms;
 
 namespace QuanLyNhanSuCuaHangQuanAo
 {
-    public partial class DoiMatKhau : Form
+    public partial class fDoiMatKhau : UserControl
     {
-        public DoiMatKhau()
+        public fDoiMatKhau()
         {
             InitializeComponent();
         }
-
         private string tkc;
         private string mkc;
-        public DoiMatKhau(string tk, string mk) : this()
+        public fDoiMatKhau(string tk, string mk) : this()
         {
             tkc = tk;
             mkc = mk;
             txtUsername2.Text = tkc;
 
         }
-        private void btnDoimk_Click(object sender, EventArgs e)
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
             if (txtOldPass.Text == mkc)
             {
@@ -54,7 +53,11 @@ namespace QuanLyNhanSuCuaHangQuanAo
                             cmd.Parameters.AddWithValue("@NewMK", txtNewPass1.Text);
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo");
-                            this.Close();
+                            txtOldPass.Clear();
+                            txtNewPass1.Clear();
+                            txtNewPass2.Clear();
+                            txtOldPass.Focus();
+
                         }
                     }
                 }
@@ -74,6 +77,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 txtNewPass2.Clear();
                 txtOldPass.Focus();
             }
+
         }
     }
 }

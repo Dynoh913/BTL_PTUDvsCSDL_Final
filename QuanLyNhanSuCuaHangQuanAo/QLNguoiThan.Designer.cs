@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.erpBaoLoi = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgvNguoiThan = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelQLNT = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
             this.cbTenNv = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenNT = new System.Windows.Forms.TextBox();
@@ -40,26 +43,51 @@
             this.txtNgheNghiep = new System.Windows.Forms.TextBox();
             this.dtpNs = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.dgvNguoiThan = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).BeginInit();
-            this.panelQLNT.SuspendLayout();
+            this.erpBaoLoi = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiThan)).BeginInit();
+            this.panelQLNT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).BeginInit();
             this.SuspendLayout();
             // 
-            // erpBaoLoi
+            // label4
             // 
-            this.erpBaoLoi.ContainerControl = this;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 24);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Tên nhân viên";
+            // 
+            // dgvNguoiThan
+            // 
+            this.dgvNguoiThan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNguoiThan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNguoiThan.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvNguoiThan.Location = new System.Drawing.Point(0, 369);
+            this.dgvNguoiThan.Name = "dgvNguoiThan";
+            this.dgvNguoiThan.RowHeadersWidth = 51;
+            this.dgvNguoiThan.RowTemplate.Height = 24;
+            this.dgvNguoiThan.Size = new System.Drawing.Size(1783, 584);
+            this.dgvNguoiThan.TabIndex = 10;
+            this.dgvNguoiThan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoiThan_CellClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 35);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Thông tin người thân";
             // 
             // panelQLNT
             // 
-            this.panelQLNT.Controls.Add(this.button4);
-
+            this.panelQLNT.Controls.Add(this.btnReset);
             this.panelQLNT.Controls.Add(this.cbTenNv);
             this.panelQLNT.Controls.Add(this.label5);
             this.panelQLNT.Controls.Add(this.txtTenNT);
@@ -75,11 +103,23 @@
             this.panelQLNT.Controls.Add(this.btnThem);
             this.panelQLNT.Controls.Add(this.dgvNguoiThan);
             this.panelQLNT.Controls.Add(this.label1);
-            this.panelQLNT.Location = new System.Drawing.Point(8, 8);
+            this.panelQLNT.Location = new System.Drawing.Point(0, 0);
             this.panelQLNT.Name = "panelQLNT";
             this.panelQLNT.Size = new System.Drawing.Size(1783, 953);
-            this.panelQLNT.TabIndex = 11;
-
+            this.panelQLNT.TabIndex = 10;
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.Window;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Image = global::QuanLyNhanSuCuaHangQuanAo.Properties.Resources.reset11;
+            this.btnReset.Location = new System.Drawing.Point(284, 9);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(47, 43);
+            this.btnReset.TabIndex = 50;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // cbTenNv
             // 
@@ -165,16 +205,6 @@
             this.label8.TabIndex = 35;
             this.label8.Text = "Ngày sinh";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 127);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 24);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Tên nhân viên";
-            // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,40 +247,9 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // dgvNguoiThan
+            // erpBaoLoi
             // 
-            this.dgvNguoiThan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvNguoiThan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNguoiThan.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvNguoiThan.Location = new System.Drawing.Point(0, 369);
-            this.dgvNguoiThan.Name = "dgvNguoiThan";
-            this.dgvNguoiThan.RowHeadersWidth = 51;
-            this.dgvNguoiThan.RowTemplate.Height = 24;
-            this.dgvNguoiThan.Size = new System.Drawing.Size(1783, 584);
-            this.dgvNguoiThan.TabIndex = 10;
-            this.dgvNguoiThan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoiThan_CellClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 35);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Thông tin người thân";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 263);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(251, 39);
-            this.button4.TabIndex = 50;
-            this.button4.Text = "Làm trống các textbox";
-            this.button4.UseVisualStyleBackColor = true;
-
+            this.erpBaoLoi.ContainerControl = this;
             // 
             // QLNguoiThan
             // 
@@ -261,36 +260,32 @@
             this.Controls.Add(this.panelQLNT);
             this.Name = "QLNguoiThan";
             this.Text = "Quản lý người thân";
-
-            ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiThan)).EndInit();
             this.panelQLNT.ResumeLayout(false);
             this.panelQLNT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiThan)).EndInit();
-
+            ((System.ComponentModel.ISupportInitialize)(this.erpBaoLoi)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ErrorProvider erpBaoLoi;
-        private System.Windows.Forms.Panel panelQLNT;
-        private System.Windows.Forms.ComboBox cbTenNv;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTenNT;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMaNT;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtNgheNghiep;
-        private System.Windows.Forms.DateTimePicker dtpNs;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvNguoiThan;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-
+        private System.Windows.Forms.Panel panelQLNT;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNgheNghiep;
+        private System.Windows.Forms.DateTimePicker dtpNs;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtTenNT;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMaNT;
+        private System.Windows.Forms.ComboBox cbTenNv;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.ErrorProvider erpBaoLoi;
     }
 }

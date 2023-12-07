@@ -1,13 +1,13 @@
 ﻿namespace QuanLyNhanSuCuaHangQuanAo
 {
-    partial class DoiMatKhau
+    partial class fDoiMatKhau
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,17 +20,16 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDoimk = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDoiMatKhau));
+            this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,54 +47,28 @@
             this.txtUsername2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // btnDoiMatKhau
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.btnDoimk);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtNewPass2);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.txtNewPass1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtOldPass);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtUsername2);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1783, 953);
-            this.panel1.TabIndex = 12;
-            // 
-            // btnDoimk
-            // 
-            this.btnDoimk.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnDoimk.FlatAppearance.BorderSize = 0;
-            this.btnDoimk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoimk.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoimk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDoimk.Location = new System.Drawing.Point(776, 698);
-            this.btnDoimk.Name = "btnDoimk";
-            this.btnDoimk.Size = new System.Drawing.Size(140, 54);
-            this.btnDoimk.TabIndex = 31;
-            this.btnDoimk.Text = "Đổi mật khẩu";
-            this.btnDoimk.UseVisualStyleBackColor = false;
-            this.btnDoimk.Click += new System.EventHandler(this.btnDoimk_Click);
+            this.btnDoiMatKhau.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnDoiMatKhau.FlatAppearance.BorderSize = 0;
+            this.btnDoiMatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiMatKhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMatKhau.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(776, 698);
+            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.Size = new System.Drawing.Size(140, 54);
+            this.btnDoiMatKhau.TabIndex = 31;
+            this.btnDoiMatKhau.Text = "Đổi mật khẩu";
+            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
             // 
             // pictureBox4
             // 
@@ -148,8 +121,8 @@
             this.txtNewPass2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPass2.Location = new System.Drawing.Point(706, 595);
             this.txtNewPass2.Name = "txtNewPass2";
-            this.txtNewPass2.Size = new System.Drawing.Size(341, 25);
-            this.txtNewPass2.TabIndex = 27;
+            this.txtNewPass2.Size = new System.Drawing.Size(298, 25);
+            this.txtNewPass2.TabIndex = 26;
             this.txtNewPass2.UseSystemPasswordChar = true;
             // 
             // pictureBox3
@@ -170,8 +143,8 @@
             this.txtNewPass1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPass1.Location = new System.Drawing.Point(706, 491);
             this.txtNewPass1.Name = "txtNewPass1";
-            this.txtNewPass1.Size = new System.Drawing.Size(341, 25);
-            this.txtNewPass1.TabIndex = 27;
+            this.txtNewPass1.Size = new System.Drawing.Size(298, 25);
+            this.txtNewPass1.TabIndex = 25;
             this.txtNewPass1.UseSystemPasswordChar = true;
             // 
             // label5
@@ -210,8 +183,8 @@
             this.txtOldPass.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOldPass.Location = new System.Drawing.Point(706, 383);
             this.txtOldPass.Name = "txtOldPass";
-            this.txtOldPass.Size = new System.Drawing.Size(341, 25);
-            this.txtOldPass.TabIndex = 27;
+            this.txtOldPass.Size = new System.Drawing.Size(298, 25);
+            this.txtOldPass.TabIndex = 24;
             this.txtOldPass.UseSystemPasswordChar = true;
             // 
             // label6
@@ -249,10 +222,11 @@
             // 
             this.txtUsername2.BackColor = System.Drawing.SystemColors.Window;
             this.txtUsername2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername2.Enabled = false;
             this.txtUsername2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername2.Location = new System.Drawing.Point(706, 272);
             this.txtUsername2.Name = "txtUsername2";
-            this.txtUsername2.Size = new System.Drawing.Size(341, 25);
+            this.txtUsername2.Size = new System.Drawing.Size(298, 25);
             this.txtUsername2.TabIndex = 23;
             // 
             // label8
@@ -268,51 +242,75 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(770, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 35);
             this.label1.TabIndex = 9;
             this.label1.Text = "Đổi mật khẩu";
             // 
-            // DoiMatKhau
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnDoiMatKhau);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtNewPass2);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.txtNewPass1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtOldPass);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtUsername2);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1369, 802);
+            this.panel1.TabIndex = 14;
+            // 
+            // fDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1783, 953);
             this.Controls.Add(this.panel1);
-            this.Name = "DoiMatKhau";
-            this.Text = "Đổi mật khẩu";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Name = "fDoiMatKhau";
+            this.Size = new System.Drawing.Size(1369, 802);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtUsername2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtOldPass;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnDoiMatKhau;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNewPass2;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txtNewPass1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDoimk;
+        private System.Windows.Forms.TextBox txtOldPass;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtUsername2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

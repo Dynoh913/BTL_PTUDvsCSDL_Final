@@ -90,33 +90,33 @@
 
             // tknl
             // 
-            this.tknl.AutoSize = true;
+            /*this.tknl.AutoSize = true;
             this.tknl.Location = new System.Drawing.Point(757, 251);
             this.tknl.Name = "tknl";
             this.tknl.Size = new System.Drawing.Size(216, 24);
             this.tknl.TabIndex = 35;
             this.tknl.Text = "Tìm kiếm theo ngày đi làm";
-            this.tknl.UseVisualStyleBackColor = true;
+            this.tknl.UseVisualStyleBackColor = true;*/
             // 
             // tkgl
             // 
-            this.tkgl.AutoSize = true;
+            /*this.tkgl.AutoSize = true;
             this.tkgl.Location = new System.Drawing.Point(1401, 251);
             this.tkgl.Name = "tkgl";
             this.tkgl.Size = new System.Drawing.Size(187, 24);
             this.tkgl.TabIndex = 34;
             this.tkgl.Text = "Tìm kiếm theo giờ làm";
-            this.tkgl.UseVisualStyleBackColor = true;
+            this.tkgl.UseVisualStyleBackColor = true;*/
             // 
             // tkten
             // 
-            this.tkten.AutoSize = true;
+            /*this.tkten.AutoSize = true;
             this.tkten.Location = new System.Drawing.Point(160, 251);
             this.tkten.Name = "tkten";
             this.tkten.Size = new System.Drawing.Size(160, 24);
             this.tkten.TabIndex = 33;
             this.tkten.Text = "Tìm kiếm theo tên";
-            this.tkten.UseVisualStyleBackColor = true;
+            this.tkten.UseVisualStyleBackColor = true;*/
             // 
 
             // 

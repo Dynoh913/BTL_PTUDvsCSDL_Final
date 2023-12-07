@@ -17,6 +17,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
         {
             InitializeComponent();
         }
+
         private bool checkForm()
         {
             bool ketQua = true;
@@ -32,23 +33,22 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 ketQua = false;
             }
             return ketQua;
-        } 
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            txtNam.Text = "";
-            txtThang.Text = "";
-            txtNgay.Text = "";
+
         }
+
+
         private void txtNam_TextChanged(object sender, EventArgs e)
         {
             if (txtNam.Text != "") txtThang.Enabled = true;
             else txtThang.Enabled = false;
         }
+
         private void txtThang_TextChanged(object sender, EventArgs e)
         {
             if (txtThang.Text != "") txtNgay.Enabled = true;
             else txtNgay.Enabled = false;
         }
+
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             try
@@ -86,6 +86,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
         private void btnTangDan_Click(object sender, EventArgs e)
         {
             int lastColumnIndex = dgvLuong.Columns.Count - 1;
@@ -94,6 +95,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 dgvLuong.Sort(dgvLuong.Columns[lastColumnIndex], System.ComponentModel.ListSortDirection.Ascending);
             }
         }
+
         private void btnGiamDan_Click(object sender, EventArgs e)
         {
             int lastColumnIndex = dgvLuong.Columns.Count - 1;
@@ -102,6 +104,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 dgvLuong.Sort(dgvLuong.Columns[lastColumnIndex], System.ComponentModel.ListSortDirection.Descending);
             }
         }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             try

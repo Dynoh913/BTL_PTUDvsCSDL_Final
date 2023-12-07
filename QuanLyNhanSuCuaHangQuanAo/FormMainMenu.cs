@@ -17,7 +17,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
         public FormMainMenu()
         {
             InitializeComponent();
-            btnClose.Visible = false;
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
         }
@@ -36,7 +35,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
                     currentBtn.BackColor = color;
                     currentBtn.Font = new System.Drawing.Font("Calibri", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     panelTitle.BackColor = color;
-                    btnClose.Visible = true;
                 }
                 activeForm = f;
                 f.TopLevel = false;
@@ -86,17 +84,6 @@ namespace QuanLyNhanSuCuaHangQuanAo
             this.Hide();
             f.ShowDialog();
         }
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            disableBtn();
-            labelTitle.Text = "TRANG CHỦ";
-            panelTitle.BackColor = Color.FromArgb(39, 164, 242);
-            currentBtn = null;
-            btnClose.Visible = false;
-        }
+
     }
 }

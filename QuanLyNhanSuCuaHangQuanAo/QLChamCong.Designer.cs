@@ -89,6 +89,7 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 11;
             // 
+
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.Window;
@@ -120,6 +121,7 @@
             this.dtpNgayLam.Name = "dtpNgayLam";
             this.dtpNgayLam.Size = new System.Drawing.Size(231, 32);
             this.dtpNgayLam.TabIndex = 22;
+
             // 
             // label5
             // 

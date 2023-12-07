@@ -66,7 +66,7 @@ insert ChamCong(MaNV, NgayDiLam, SoGioLam) values(2, '1/1/2024', 25)
 
 create function TinhLuongTheoNgay(@NgayDiLam date) returns table as return
 (
-    select NhanVien.MaNV as 'Mã nhân viên',NhanVien.TenNV as 'Tên nhân viên',NgayDiLam as 'Ngày đi làm',sum(SoGioLam) as 'Tổng số giờ làm',sum(SoGioLam) * 20000 as 'Lương ngày'
+    select NhanVien.MaNV as 'Mã nhân viên',NhanVien.TenNV,NgayDiLam as 'Ngày đi làm',sum(SoGioLam) as 'Tổng số giờ làm',sum(SoGioLam) * 20000 as 'Lương ngày'
     from ChamCong inner join NhanVien on ChamCong.MaNV = NhanVien.MaNV
     where ChamCong.NgayDiLam = @NgayDiLam
 	group by NhanVien.MaNV,NhanVien.TenNV,NgayDiLam
@@ -74,7 +74,7 @@ create function TinhLuongTheoNgay(@NgayDiLam date) returns table as return
 
 create function TinhLuongTheoThang(@Thang int, @Nam int) returns table as return
 (
-	select NhanVien.MaNV as 'Mã nhân viên',NhanVien.TenNV as 'Tên nhân viên',@Thang as 'Tháng',@Nam as 'Năm',sum(ChamCong.SoGioLam) as 'Tổng số giờ làm',sum(ChamCong.SoGioLam) * 20000 as 'Lương tháng'
+	select NhanVien.MaNV as 'Mã nhân viên',NhanVien.TenNV,@Thang as 'Tháng',@Nam as 'Năm',sum(ChamCong.SoGioLam) as 'Tổng số giờ làm',sum(ChamCong.SoGioLam) * 20000 as 'Lương tháng'
 	from ChamCong inner join NhanVien on ChamCong.MaNV = NhanVien.MaNV
 	where year(ChamCong.NgayDiLam) = @Nam and month(ChamCong.NgayDiLam) = @Thang
 	group by NhanVien.MaNV,NhanVien.TenNV
@@ -82,13 +82,17 @@ create function TinhLuongTheoThang(@Thang int, @Nam int) returns table as return
 
 create function TinhLuongTheoNam(@Nam int) returns table as return
 (
-	select NhanVien.MaNV as 'Mã nhân viên',NhanVien.TenNV as 'Tên nhân viên',@Nam as 'Năm',sum(ChamCong.SoGioLam) as 'Tổng số giờ làm',sum(ChamCong.SoGioLam) * 20000 as 'Lương năm'
+	select NhanVien.MaNV as 'Mã nhân viên',NhanVien.TenNV,@Nam as 'Năm',sum(ChamCong.SoGioLam) as 'Tổng số giờ làm',sum(ChamCong.SoGioLam) * 20000 as 'Lương năm'
 	from ChamCong inner join NhanVien on ChamCong.MaNV = NhanVien.MaNV
 	where year(ChamCong.NgayDiLam) = @Nam
 	group by NhanVien.MaNV,NhanVien.TenNV
 )
 
 drop function TinhLuongTheoThang
+drop function TinhLuongTheoNgay
+drop function TinhLuongTheoNam
+
+
 select * from TinhLuongTheoNgay('12/1/2023')
 select * from TinhLuongTheoNgay('12/2/2023')
 select * from TinhLuongTheoThang(12, 2023)

@@ -94,36 +94,33 @@
             // 
             // tknl
             // 
-            this.tknl.AutoSize = true;
-            this.tknl.Location = new System.Drawing.Point(673, 201);
-            this.tknl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            /*this.tknl.AutoSize = true;
+            this.tknl.Location = new System.Drawing.Point(757, 251);
             this.tknl.Name = "tknl";
             this.tknl.Size = new System.Drawing.Size(185, 20);
             this.tknl.TabIndex = 35;
             this.tknl.Text = "Tìm kiếm theo ngày đi làm";
-            this.tknl.UseVisualStyleBackColor = true;
+            this.tknl.UseVisualStyleBackColor = true;*/
             // 
             // tkgl
             // 
-            this.tkgl.AutoSize = true;
-            this.tkgl.Location = new System.Drawing.Point(1245, 201);
-            this.tkgl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            /*this.tkgl.AutoSize = true;
+            this.tkgl.Location = new System.Drawing.Point(1401, 251);
             this.tkgl.Name = "tkgl";
             this.tkgl.Size = new System.Drawing.Size(160, 20);
             this.tkgl.TabIndex = 34;
             this.tkgl.Text = "Tìm kiếm theo giờ làm";
-            this.tkgl.UseVisualStyleBackColor = true;
+            this.tkgl.UseVisualStyleBackColor = true;*/
             // 
             // tkten
             // 
-            this.tkten.AutoSize = true;
-            this.tkten.Location = new System.Drawing.Point(142, 201);
-            this.tkten.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            /*this.tkten.AutoSize = true;
+            this.tkten.Location = new System.Drawing.Point(160, 251);
             this.tkten.Name = "tkten";
             this.tkten.Size = new System.Drawing.Size(134, 20);
             this.tkten.TabIndex = 33;
             this.tkten.Text = "Tìm kiếm theo tên";
-            this.tkten.UseVisualStyleBackColor = true;
+            this.tkten.UseVisualStyleBackColor = true;*/
             // 
             // comboBox1
             // 

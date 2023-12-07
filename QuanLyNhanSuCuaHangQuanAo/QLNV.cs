@@ -180,7 +180,7 @@ namespace QuanLyNhanSuCuaHangQuanAo
                 cmd = cmd + " and ChucVu=@ChucVu";
                 parameters.Add("@ChucVu", cbCv.SelectedItem.ToString());
             }
-            dgvNhanVien.DataSource = Database.Query(cmd, parameters);
+            dgvNhanVien.DataSource = Database.Query(cmd, parameters);//
         }
     }
 }

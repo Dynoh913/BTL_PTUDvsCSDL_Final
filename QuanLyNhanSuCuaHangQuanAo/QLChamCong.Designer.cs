@@ -42,6 +42,7 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvChamCong = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+
             this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).BeginInit();
@@ -57,7 +58,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Tên nhân viên";
             // 
-            // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.Location = new System.Drawing.Point(1189, 320);
@@ -87,7 +87,38 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 11;
             // 
-            // cbTenNv
+
+            // tknl
+            // 
+            this.tknl.AutoSize = true;
+            this.tknl.Location = new System.Drawing.Point(757, 251);
+            this.tknl.Name = "tknl";
+            this.tknl.Size = new System.Drawing.Size(216, 24);
+            this.tknl.TabIndex = 35;
+            this.tknl.Text = "Tìm kiếm theo ngày đi làm";
+            this.tknl.UseVisualStyleBackColor = true;
+            // 
+            // tkgl
+            // 
+            this.tkgl.AutoSize = true;
+            this.tkgl.Location = new System.Drawing.Point(1401, 251);
+            this.tkgl.Name = "tkgl";
+            this.tkgl.Size = new System.Drawing.Size(187, 24);
+            this.tkgl.TabIndex = 34;
+            this.tkgl.Text = "Tìm kiếm theo giờ làm";
+            this.tkgl.UseVisualStyleBackColor = true;
+            // 
+            // tkten
+            // 
+            this.tkten.AutoSize = true;
+            this.tkten.Location = new System.Drawing.Point(160, 251);
+            this.tkten.Name = "tkten";
+            this.tkten.Size = new System.Drawing.Size(160, 24);
+            this.tkten.TabIndex = 33;
+            this.tkten.Text = "Tìm kiếm theo tên";
+            this.tkten.UseVisualStyleBackColor = true;
+            // 
+
             // 
             this.cbTenNv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTenNv.FormattingEnabled = true;
@@ -126,7 +157,7 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Số giờ làm";
             // 
-            // txtSogiolam
+
             // 
             this.txtSogiolam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSogiolam.Location = new System.Drawing.Point(1529, 157);
@@ -196,6 +227,7 @@
             // dgvChamCong
             // 
             this.dgvChamCong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+
             this.dgvChamCong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChamCong.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvChamCong.Location = new System.Drawing.Point(0, 369);
@@ -229,6 +261,7 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+
             // QLChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -262,5 +295,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbTenNv;
         private System.Windows.Forms.Button btnReset;
+
     }
 }

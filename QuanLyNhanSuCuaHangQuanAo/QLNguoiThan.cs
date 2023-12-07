@@ -27,6 +27,11 @@ namespace QuanLyNhanSuCuaHangQuanAo
             txtMaNT.Text = "";
             txtTenNT.Text = "";
             txtNgheNghiep.Text = "";
+            dgvNguoiThan.Columns[0].HeaderText = "Mã người thân";
+            dgvNguoiThan.Columns[1].HeaderText = "Tên người thân";
+            dgvNguoiThan.Columns[2].HeaderText = "Tên nhân viên";
+            dgvNguoiThan.Columns[3].HeaderText = "Nghề nghiệp";
+            dgvNguoiThan.Columns[4].HeaderText = "Ngày sinh";
         }
         private bool checkForm()
         {

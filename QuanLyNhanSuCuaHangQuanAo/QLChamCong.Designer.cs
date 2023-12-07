@@ -31,6 +31,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.cbTenNv = new System.Windows.Forms.ComboBox();
             this.dtpNgayLam = new System.Windows.Forms.DateTimePicker();
@@ -43,7 +44,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvChamCong = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChamCong)).BeginInit();
             this.SuspendLayout();
@@ -89,7 +89,15 @@
             this.panel1.Size = new System.Drawing.Size(1783, 953);
             this.panel1.TabIndex = 11;
             // 
-
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1186, 292);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Tìm kiếm theo tên:";
+            // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.Window;
@@ -105,6 +113,7 @@
             // 
             // cbTenNv
             // 
+            this.cbTenNv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenNv.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTenNv.FormattingEnabled = true;
             this.cbTenNv.Location = new System.Drawing.Point(145, 157);
@@ -121,7 +130,6 @@
             this.dtpNgayLam.Name = "dtpNgayLam";
             this.dtpNgayLam.Size = new System.Drawing.Size(231, 32);
             this.dtpNgayLam.TabIndex = 22;
-
             // 
             // label5
             // 
@@ -232,15 +240,6 @@
             this.label1.Size = new System.Drawing.Size(253, 35);
             this.label1.TabIndex = 9;
             this.label1.Text = "Thông tin chấm công";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1186, 292);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
-            this.label2.TabIndex = 52;
-            this.label2.Text = "Tìm kiếm theo tên:";
             // 
             // QLChamCong
             // 

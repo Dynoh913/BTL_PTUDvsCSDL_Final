@@ -24,6 +24,12 @@ namespace QuanLyNhanSuCuaHangQuanAo
             txtDiaChi.Text = "";
             txtTenNv.Text = "";
             txtSdt.Text = "";
+            dgvNhanVien.Columns[0].HeaderText = "Mã nhân viên";
+            dgvNhanVien.Columns[1].HeaderText = "Tên nhân viên";
+            dgvNhanVien.Columns[2].HeaderText = "Ngày sinh";
+            dgvNhanVien.Columns[3].HeaderText = "Số điện thoại";
+            dgvNhanVien.Columns[4].HeaderText = "Địa chỉ";
+            dgvNhanVien.Columns[5].HeaderText = "Chức vụ";
             foreach (Control control in panelQLNV.Controls)
             {
                 if (control is CheckBox checkBox && checkBox.Checked)
